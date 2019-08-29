@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>ci/cd on ZB</title>
-    <link>https://k8sz.github.io/tags/ci/cd/</link>
+    <link>https://www.k8sz.com/tags/ci/cd/</link>
     <description>Recent content in ci/cd on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://k8sz.github.io/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://www.k8sz.com/tags/ci/cd/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>kubernetes CI/CD之drone安装</title>
-      <link>https://k8sz.github.io/post/kubernetes-drone-install/</link>
+      <link>https://www.k8sz.com/post/kubernetes-drone-install/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://k8sz.github.io/post/kubernetes-drone-install/</guid>
+      <guid>https://www.k8sz.com/post/kubernetes-drone-install/</guid>
       <description>&lt;p&gt;Drone是一种基于容器技术的持续交付系统。使用简单的YAML配置文件来定义和执行Docker容器中定义的Pipeline，Drone主要由两个部分组成：&lt;/p&gt;
 
 &lt;ul&gt;

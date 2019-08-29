@@ -3,219 +3,219 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://k8sz.github.io/post/</loc>
+    <loc>https://www.k8sz.com/post/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/</loc>
+    <loc>https://www.k8sz.com/tags/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/</loc>
+    <loc>https://www.k8sz.com/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/cicd/</loc>
+    <loc>https://www.k8sz.com/tags/cicd/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/devops/</loc>
+    <loc>https://www.k8sz.com/tags/devops/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/kubernetes/</loc>
+    <loc>https://www.k8sz.com/tags/kubernetes/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kubernetes-prometheus-intro/</loc>
+    <loc>https://www.k8sz.com/post/kubernetes-prometheus-intro/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/prometheus/</loc>
-    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/tags/%E7%9B%91%E6%8E%A7/</loc>
+    <loc>https://www.k8sz.com/tags/prometheus/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/ci/cd/</loc>
+    <loc>https://www.k8sz.com/tags/%E7%9B%91%E6%8E%A7/</loc>
+    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/ci/cd/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/docker/</loc>
+    <loc>https://www.k8sz.com/tags/docker/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/drone/</loc>
+    <loc>https://www.k8sz.com/tags/drone/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/gogs/</loc>
+    <loc>https://www.k8sz.com/tags/gogs/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/kubectl/</loc>
+    <loc>https://www.k8sz.com/tags/kubectl/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kubernetes-drone-install/</loc>
+    <loc>https://www.k8sz.com/post/kubernetes-drone-install/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/ldap/</loc>
-    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/tags/yaml/</loc>
+    <loc>https://www.k8sz.com/tags/ldap/</loc>
     <lastmod>2019-08-27T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/git/</loc>
+    <loc>https://www.k8sz.com/tags/yaml/</loc>
+    <lastmod>2019-08-27T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/git/</loc>
     <lastmod>2019-08-26T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kubernetesgogs/</loc>
+    <loc>https://www.k8sz.com/post/kubernetesgogs/</loc>
     <lastmod>2019-08-26T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/helm/</loc>
+    <loc>https://www.k8sz.com/tags/helm/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/kubeadm/</loc>
+    <loc>https://www.k8sz.com/tags/kubeadm/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kuberneteshelm/</loc>
+    <loc>https://www.k8sz.com/post/kuberneteshelm/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kuberneteskubeadm/</loc>
+    <loc>https://www.k8sz.com/post/kuberneteskubeadm/</loc>
     <lastmod>2019-08-17T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kubernetesldap/</loc>
+    <loc>https://www.k8sz.com/post/kubernetesldap/</loc>
     <lastmod>2019-08-16T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/kubernetesopenings/</loc>
+    <loc>https://www.k8sz.com/post/kubernetesopenings/</loc>
     <lastmod>2019-08-15T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/dockerfilebestpractice/</loc>
+    <loc>https://www.k8sz.com/post/dockerfilebestpractice/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/dockerfile/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/tags/life/</loc>
+    <loc>https://www.k8sz.com/tags/dockerfile/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/motivational/</loc>
+    <loc>https://www.k8sz.com/tags/life/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/tags/win/</loc>
+    <loc>https://www.k8sz.com/tags/motivational/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/post/happiness/</loc>
+    <loc>https://www.k8sz.com/tags/win/</loc>
     <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/post/sixregrets/</loc>
-    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/page/about/</loc>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/page/archive/</loc>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/archives/</loc>
-  </url>
-  
-  <url>
-    <loc>https://k8sz.github.io/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/page/kubernetes.io/</loc>
+    <loc>https://www.k8sz.com/post/happiness/</loc>
+    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/page/kubernetes.org.cn/</loc>
+    <loc>https://www.k8sz.com/post/sixregrets/</loc>
+    <lastmod>2019-08-14T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/page/</loc>
+    <loc>https://www.k8sz.com/page/about/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/page/archive/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/archives/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://k8sz.github.io/page/friend/</loc>
+    <loc>https://www.k8sz.com/page/kubernetes.io/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/page/kubernetes.org.cn/</loc>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/page/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/page/friend/</loc>
   </url>
   
 </urlset>
