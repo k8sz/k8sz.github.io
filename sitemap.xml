@@ -3,13 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.k8sz.com/linux/</loc>
-    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/linux/linux-git-command/</loc>
+    <loc>https://www.k8sz.com/post/linux-git-command/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
   </url>
   
