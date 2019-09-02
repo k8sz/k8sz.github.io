@@ -296,7 +296,7 @@ if (!doNotTrack) {
 
 <h2 id="prometheus构架图">Prometheus构架图</h2>
 
-<figure><img src="https://k8sz.gitee.io/img/k8s/prom001.png" alt="Prometheus构架图"><figcaption>Prometheus构架图</figcaption></figure>
+<figure><img src="https://www.k8sz.com/img/k8s/prom001.png" alt="Prometheus构架图"><figcaption>Prometheus构架图</figcaption></figure>
 
 <h3 id="prometheus组件-1">Prometheus组件</h3>
 
@@ -321,9 +321,9 @@ if (!doNotTrack) {
 
 <h3 id="prometheus-server-and-targets">Prometheus server and targets</h3>
 
-<p><img src="https://k8sz.gitee.io/img/k8s/prom002.png" alt="Prometheus server and targets" />
+<p><img src="https://www.k8sz.com/img/k8s/prom002.png" alt="Prometheus server and targets" />
 利用Prometheus官方或第三方提供的探针，基本可以完成对所有常用中间件或第三方工具的监控。
-<img src="https://k8sz.gitee.io/img/k8s/prom003.png" alt="Prometheus" />
+<img src="https://www.k8sz.com/img/k8s/prom003.png" alt="Prometheus" />
 之前讲到Prometheus是中心化的数据采集分析，那这里的探针（exporter）是做什么工作呢？
 上图中硬件及系统监控探针node exporter通过getMemInfo()方法获取机器的内存信息，然后将机器总内存数据对应上指标node_memory_MemTotal。</p>
 
@@ -335,7 +335,7 @@ if (!doNotTrack) {
 
 <h3 id="prometheus-alerting">Prometheus alerting</h3>
 
-<p><img src="https://k8sz.gitee.io/img/k8s/prom004.png" alt="Prometheus alerting" />
+<p><img src="https://www.k8sz.com/img/k8s/prom004.png" alt="Prometheus alerting" />
 Prometheus serve又是如何根据采集到的监控数据配和alertmanager完成告警呢？</p>
 
 <ul>
@@ -353,7 +353,7 @@ Prometheus serve又是如何根据采集到的监控数据配和alertmanager完�
 
 <h3 id="service-discovery">Service discovery</h3>
 
-<figure><img src="https://k8sz.gitee.io/img/k8s/prom005.png" alt="Service discovery"><figcaption>Service discovery</figcaption></figure>
+<figure><img src="https://www.k8sz.com/img/k8s/prom005.png" alt="Service discovery"><figcaption>Service discovery</figcaption></figure>
 
 <ul>
 <li>Prometheus支持多种服务发现的方式，这里主要介绍架构图中提到的file_sd的方式。之前提到Prometheus server的数据采集配置都是通过配置文件，那服务发现该怎么做？总不能每次要添加采集目标还要修改配置文件并重启服务吧。</li>
@@ -363,13 +363,13 @@ Prometheus serve又是如何根据采集到的监控数据配和alertmanager完�
 
 <h3 id="web-ui">Web UI</h3>
 
-<p><img src="https://k8sz.gitee.io/img/k8s/prom006.png" alt="Web UI" />
+<p><img src="https://www.k8sz.com/img/k8s/prom006.png" alt="Web UI" />
 至此，已经完成了数据采集和告警配置，是时候通过页面展示一波成果了。
 Grafana已经对Prometheus做了很好的支撑，在Grafana中添加Prometheus数据源，然后就可以使用PromQL查询语句结合grafana强大的图形化能力来配置我们的性能监控页面了。</p>
 
 <h3 id="联邦模式">联邦模式</h3>
 
-<figure><img src="https://k8sz.gitee.io/img/k8s/prom007.png" alt="联邦模式"><figcaption>联邦模式</figcaption></figure>
+<figure><img src="https://www.k8sz.com/img/k8s/prom007.png" alt="联邦模式"><figcaption>联邦模式</figcaption></figure>
 
 <ul>
 <li>中心化的数据采集存储，分析，而且还不支持集群模式。带来的性能问题显而易见。Prometheus给出了一种联邦的部署方式，就是Prometheus server可以从其他的Prometheus server采集数据。
@@ -380,7 +380,7 @@ Grafana已经对Prometheus做了很好的支撑，在Grafana中添加Prometheus�
 
 <h2 id="prometheus监控kubernetes">Prometheus监控Kubernetes</h2>
 
-<figure><img src="https://k8sz.gitee.io/img/k8s/prom008.png" alt="Prometheus监控Kubernetes"><figcaption>Prometheus监控Kubernetes</figcaption></figure>
+<figure><img src="https://www.k8sz.com/img/k8s/prom008.png" alt="Prometheus监控Kubernetes"><figcaption>Prometheus监控Kubernetes</figcaption></figure>
 
 <ul>
 <li>Kubernetes官方之前推荐了一种性能监控的解决方案，heapster+influxdb，heapster根据定义的间隔时间从Advisor中获取的关于pod及container的性能数据并存储到时间序列数据库influxdb。</li>
@@ -389,7 +389,7 @@ Grafana已经对Prometheus做了很好的支撑，在Grafana中添加Prometheus�
 <li>Prometheus同样通过Kubernetes的cAdvisor接口（/api/v1/nodes/${1}/proxy/metrics/cadvisor）获取pod和container的性能监控数据，同时可以使用Kubernetes的Kube-state-metrics插件来获取集群上Pod, DaemonSet, Deployment, Job, CronJob等各种资源对象的状态，这反应了使用这些资源的应用的状态</li>
 
 <li><p>同时通过Kubernetes api获取node，service，pod，endpoints，ingress等服务的信息，然后通过匹配注解中的值来获取采集目标
-<img src="https://k8sz.gitee.io/img/k8s/prom009.png" alt="prometheus" /></p></li>
+<img src="https://www.k8sz.com/img/k8s/prom009.png" alt="prometheus" /></p></li>
 
 <li><p>上面提到了Prometheus可以通过Kubernetes的api接口实现服务发现，并将匹配定义了annotation参数的pod，service等配置成采集目标。那现在要解决的问题就是探针到应用部署配置问题了。</p></li>
 
