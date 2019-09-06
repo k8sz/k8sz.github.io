@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Draft on ZB</title>
+    <link>https://www.k8sz.com/tags/draft/</link>
+    <description>Recent content in Draft on ZB</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://www.k8sz.com/tags/draft/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>kubernetes之Jenkins x主要组件</title>
+      <link>https://www.k8sz.com/post/kubernetes-jx-component/</link>
+      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/kubernetes-jx-component/</guid>
+      <description>&lt;p&gt;Jenkins X 是一个高度集成化的CI/CD平台，基于Jenkins和Kubernetes实现，旨在解决微服务体系架构下的云原生应用的持续交付的问题，简化整个云原生应用的开发、运行和部署过程。&lt;/p&gt;
+
+&lt;p&gt;jx是云原生CICD，devops的一个最佳实践之一，目前在快速的发展成熟中,这里介绍jx用到的一些相关组件&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
