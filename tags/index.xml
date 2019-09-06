@@ -6,118 +6,10 @@
     <description>Recent content in Tags on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Aug 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Chartmuseum</title>
-      <link>https://www.k8sz.com/tags/chartmuseum/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/chartmuseum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Draft</title>
-      <link>https://www.k8sz.com/tags/draft/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/draft/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Monocular</title>
-      <link>https://www.k8sz.com/tags/monocular/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/monocular/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nexus</title>
-      <link>https://www.k8sz.com/tags/nexus/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/nexus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>devops</title>
-      <link>https://www.k8sz.com/tags/devops/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>github</title>
-      <link>https://www.k8sz.com/tags/github/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/github/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>helm</title>
-      <link>https://www.k8sz.com/tags/helm/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jenkins</title>
-      <link>https://www.k8sz.com/tags/jenkins/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/jenkins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jenkins x</title>
-      <link>https://www.k8sz.com/tags/jenkins-x/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/jenkins-x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jx</title>
-      <link>https://www.k8sz.com/tags/jx/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/jx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://www.k8sz.com/tags/kubernetes/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>skaffold</title>
-      <link>https://www.k8sz.com/tags/skaffold/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/skaffold/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>cicd</title>
@@ -129,11 +21,29 @@
     </item>
     
     <item>
+      <title>devops</title>
+      <link>https://www.k8sz.com/tags/devops/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/devops/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>git</title>
       <link>https://www.k8sz.com/tags/git/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://www.k8sz.com/tags/kubernetes/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -224,6 +134,15 @@
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/yaml/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>helm</title>
+      <link>https://www.k8sz.com/tags/helm/</link>
+      <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/helm/</guid>
       <description></description>
     </item>
     
