@@ -6,10 +6,82 @@
     <description>Recent content in Tags on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 06 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 16 Sep 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ci/cd</title>
+      <link>https://www.k8sz.com/tags/ci/cd/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/ci/cd/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>docker</title>
+      <link>https://www.k8sz.com/tags/docker/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jenkins</title>
+      <link>https://www.k8sz.com/tags/jenkins/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/jenkins/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jx</title>
+      <link>https://www.k8sz.com/tags/jx/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/jx/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubectl</title>
+      <link>https://www.k8sz.com/tags/kubectl/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubectl/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://www.k8sz.com/tags/kubernetes/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ldap</title>
+      <link>https://www.k8sz.com/tags/ldap/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/ldap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>yaml</title>
+      <link>https://www.k8sz.com/tags/yaml/</link>
+      <pubDate>Mon, 16 Sep 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/yaml/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Chartmuseum</title>
@@ -75,38 +147,11 @@
     </item>
     
     <item>
-      <title>jenkins</title>
-      <link>https://www.k8sz.com/tags/jenkins/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/jenkins/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jenkins x</title>
       <link>https://www.k8sz.com/tags/jenkins-x/</link>
       <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/jenkins-x/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>jx</title>
-      <link>https://www.k8sz.com/tags/jx/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/jx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://www.k8sz.com/tags/kubernetes/</link>
-      <pubDate>Fri, 06 Sep 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
@@ -165,24 +210,6 @@
     </item>
     
     <item>
-      <title>ci/cd</title>
-      <link>https://www.k8sz.com/tags/ci/cd/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/ci/cd/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>docker</title>
-      <link>https://www.k8sz.com/tags/docker/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/docker/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>drone</title>
       <link>https://www.k8sz.com/tags/drone/</link>
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
@@ -197,33 +224,6 @@
       <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/gogs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubectl</title>
-      <link>https://www.k8sz.com/tags/kubectl/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubectl/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ldap</title>
-      <link>https://www.k8sz.com/tags/ldap/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/ldap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>yaml</title>
-      <link>https://www.k8sz.com/tags/yaml/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/yaml/</guid>
       <description></description>
     </item>
     
