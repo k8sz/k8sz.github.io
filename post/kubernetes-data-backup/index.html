@@ -255,6 +255,13 @@ if (!doNotTrack) {
 <p>Etcd使用的是raft一致性算法来实现的，是一款分布式的一致性KV存储，主要用于共享配置和服务发现。关于raft一致性算法请参考<a href="http://thesecretlivesofdata.com/raft/">该动画演示</a>
 关于Etcd的原理解析请参考<a href="http://jolestar.com/etcd-architecture/">Etcd 架构与实现解析</a></p>
 
+<h2 id="etcdctl安装">etcdctl安装</h2>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#6272a4">##下载二进制安装包</span>
+https://github.com/etcd-io/etcd/releases
+wget https://github.com/etcd-io/etcd/releases/download/v3.4.0/etcd-v3.4.0-linux-amd64.tar.gz
+tar xf etcd-v3.4.0-linux-amd64.tar.gz
+cp -a etcdctl /usr/bin/
+etcdctl version</code></pre></div>
 <h2 id="etcd在kubernetes集群中注意事项">ETCD在Kubernetes集群中注意事项</h2>
 
 <p>flannel操作etcd使用的是v2的API，而kubernetes操作etcd使用的v3的API，所以在下面我们执行etcdctl的时候需要设置ETCDCTL_API环境变量，该变量默认值为2。</p>
@@ -277,9 +284,9 @@ etcdctl get / --prefix --keys-only --cert<span style="color:#ff79c6">=</span>/et
 <li>etcd V3版api数据</li>
 </ul>
 
-<p>备份脚本</p>
+<h3 id="备份脚本">备份脚本</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#6272a4">#!/bin/bash</span></code></pre></div>
-<p>备份命令</p>
+<h3 id="备份命令">备份命令</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">#
 
 #
