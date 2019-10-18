@@ -6,17 +6,26 @@
     <description>Recent content on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>HelmV2迁移到V3版本</title>
+      <link>https://www.k8sz.com/post/helm2-to-v3/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/helm2-to-v3/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://v3.helm.sh/&#34;&gt;Helm V3 版本&lt;/a&gt;已经发布了第三个 Beta 版本了，由于 V2 和 V3 版本之间的架构变化较大，所以如果我们现在正在使用 V2 版本的话，要迁移到 V3 版本了就有点小麻烦，其中最重要的当然就是数据迁移的问题，为了解决这个版本迁移问题，官方提供了一个名为 &lt;a href=&#34;https://github.com/helm/helm-2to3&#34;&gt;helm-2to3&lt;/a&gt; 的插件可以来简化我们的迁移工作。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>kubernetes之Jenkins 流水线语法</title>
-      <link>https://www.k8sz.com/post/kubernetesldap/</link>
+      <link>https://www.k8sz.com/post/kubernetes-jenkinsfile/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.k8sz.com/post/kubernetesldap/</guid>
+      <guid>https://www.k8sz.com/post/kubernetes-jenkinsfile/</guid>
       <description>&lt;p&gt;声明式和脚本化的流水线从根本上是不同的。 声明式流水线的是 Jenkins 流水线更近的特性:&lt;/p&gt;
 
 &lt;ul&gt;

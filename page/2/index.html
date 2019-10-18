@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+  <title>ZB-Linux,Docker kubernetes DevOps ServiceMesh Golang</title>
+  <meta name="keywords" content="Linux,Kubernetes,Docker,istio,Golang,Cloud Native,微服务"/>
+  <meta name="description" content="专注Linux,Docker kubernetes DevOps ServiceMesh Golang等技术。">
+  <meta property="og:title" content="ZB" />
+  <meta name="twitter:title" content="ZB" />
+
+  <meta name="author" content=""/>
+  <link href='https://image.77s.vip/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://image.77s.vip/favicon.png" />
+  <meta name="twitter:image" content="https://image.77s.vip/favicon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.k8sz.com/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ZB" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://www.k8sz.com/" />
+  <link rel="alternate" href="https://www.k8sz.com/index.xml" type="application/rss+xml" title="ZB">
+
+  
+  
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700%7COpen+Sans:400,700" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href='https://www.k8sz.com/css/bundle.min.d236889182ad0dba3ea8cf427c8c43c658a4b0d39ab889ff934e277a03537814.css' integrity='sha256-0jaIkYKtDbo&#43;qM9CfIxDxliksNOauIn/k04negNTeBQ='>
+
+  
+    
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146440849-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.k8sz.com/">ZB</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="首页" href="https://www.k8sz.com/">首页</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Docker" href="https://www.k8sz.com/tags/docker">Docker</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Kubernetes" href="https://www.k8sz.com/tags/kubernetes">Kubernetes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="DevOps" href="https://www.k8sz.com/tags/devops">DevOps</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="励志人生" href="https://www.k8sz.com/tags/motivational">励志人生</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="关于" href="https://www.k8sz.com/auto">关于</a>
+            </li>
+          
+        
+
+        
+
+        
+
+        
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://www.k8sz.com/img/data-science-1.jpg" ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>ZB</h1>
+                  
+                    
+                      <hr class="small">
+                      <span class="page-subheading">目标清晰，职责明确，赏罚分明，超越伯乐</span>
+                    
+                  
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="page-heading">
+              <h1>ZB</h1>
+                
+                  
+                    <hr class="small">
+                    <span class="page-subheading">目标清晰，职责明确，赏罚分明，超越伯乐</span>
+                  
+                
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10">
+
+        
+        <div class="posts-list">
+          
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/sixregrets/">
+                <h2 class="post-title">全文仅42个字道尽人生六大悔事</h2>
+                
+                  <h3 class="post-subtitle">
+                  转自 领导者成功思维
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 14, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>一辈子那么长，谁的心里没有几件后悔的事。北宋名相寇准有一篇传世奇文，全文短短六句话，四十二个字，却说尽了人生六大悔事，看完后不禁潸然泪下。</p>
+
+<p>晚清第一名臣曾国藩，对这篇文章推崇备至，将他奉为经典，时刻用于自省。</p>
+
+<p>这六大悔事，看看你占了几样？</p>
+                  <a href="https://www.k8sz.com/post/sixregrets/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/life/">life</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/win/">win</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/motivational/">motivational</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+        </div>
+
+        <div align="center" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="https://www.k8sz.com/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="https://www.k8sz.com/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="https://www.k8sz.com/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="https://www.k8sz.com/page/2/">2</a></li>
+    
+    
+    <li class="page-item disabled">
+    <a href="" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="https://www.k8sz.com/page/2/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+          
+          
+        </div>
+
+      </div>
+
+      <div class="col-lg-4 col-md-2">
+
+        <div class="sidebar-wrap" style="padding-top:5px !important;">
+          
+          <a class="course-post" target="__blank" href="https://www.k8sz.com/post/" title="斗破苍穹">
+            <img src="https://huodong.sibumbg.cn/huodong/dpcq3.jpg" alt="斗破苍穹" class="img-fluid">
+          </a>
+          
+        </div>
+
+        <div class="sidebar-wrap sidebar-about">
+          <div class="about-img">
+            <img src="https://www.k8sz.com/img/avatar-favicon.png" class="rounded-circle">
+          </div>
+          <h4 class="py-2">Hi! -That's Me</h4>
+          <p class="about-text">大家好，我是ZB，对互联网产品有自己独到的见解，运维工程师，现阶段对kubernetes和istio非常着迷，感兴趣的可以通过微信和我联系。</p>
+          <ul class="list-inline social-link">
+            <li class="list-inline-item"><a href="mailto:@gmail.com"><i class="fa fa-envelope"></i></a></li>
+            <li class="list-inline-item"><a href="https://github.com/linjunjianbaba"><i class="fa fa-github"></i></a></li>
+            <li class="list-inline-item"><a href="https://weibo.com/"><i class="fa fa-weibo"></i></a></li>
+            <li class="list-inline-item"><a href="https://www.k8sz.com/index.xml"><i class="fa fa-rss"></i></a></li>
+          </ul>
+          <img src="https://www.k8sz.com/img/zhuansuan.jpg" alt="">
+        </div>
+
+        
+        <div class="sidebar-wrap">
+          <div class="sidebar-block course-wrap">
+            <h4 class="sidebar-title">Cloud native</h4>
+            
+            <a class="course-post" href="https://promotion.aliyun.com/ntms/yunparter/invite.html?userCode=musnpk8z" title="阿里云推广">
+              <img src="https://img.alicdn.com/tfs/TB1fhjncuH2gK0jSZFEXXcqMpXa-280-118.jpg" alt="阿里云推广" class="img-fluid">
+            </a>
+            
+          </div>
+        </div>
+        
+        <div class="sidebar-wrap">
+          <div class="sidebar-block latest-post">
+            <h4 class="sidebar-title">热门文章</h4>
+            <ol class="list-unstyled">
+              
+              <li>
+                <a href="https://www.k8sz.com/post/sixregrets/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/rs/SixRegrets.jpg" alt="全文仅42个字道尽人生六大悔事" class="img-fluid">
+                  </div>
+                  <h5>全文仅42个字道尽人生六大悔事</h5>
+                  <p class="text-muted">Aug 14, 2019</p>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.k8sz.com/post/kubernetes-drone-install/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/k8s/drone001.png" alt="kubernetes CI/CD之drone安装" class="img-fluid">
+                  </div>
+                  <h5>kubernetes CI/CD之drone安装</h5>
+                  <p class="text-muted">Aug 27, 2019</p>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.k8sz.com/post/kubernetesgogs/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/k8s/gogs006.png" alt="kubernetes之gogs安装" class="img-fluid">
+                  </div>
+                  <h5>kubernetes之gogs安装</h5>
+                  <p class="text-muted">Aug 26, 2019</p>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.k8sz.com/post/kuberneteshelm/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/sphere-thumb.jpg" alt="kubernetes之Helm安装" class="img-fluid">
+                  </div>
+                  <h5>kubernetes之Helm安装</h5>
+                  <p class="text-muted">Aug 17, 2019</p>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.k8sz.com/post/kuberneteskubeadm/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/triangle-thumb.jpg" alt="kubernetes之使用kubeadm安装1.15.2" class="img-fluid">
+                  </div>
+                  <h5>kubernetes之使用kubeadm安装1.15.2</h5>
+                  <p class="text-muted">Aug 17, 2019</p>
+                </a>
+              </li>
+              
+              <li>
+                <a href="https://www.k8sz.com/post/kubernetesldap/">
+                  <div class="rpost-img">
+                    <img src="https://www.k8sz.com/img/k8s/ldap001.png" alt="kubernetes之LDAP安装" class="img-fluid">
+                  </div>
+                  <h5>kubernetes之LDAP安装</h5>
+                  <p class="text-muted">Aug 16, 2019</p>
+                </a>
+              </li>
+              
+            </ol>
+          </div>
+        </div>
+        
+        <div class="sidebar-wrap">
+          <h4 class="sidebar-title">标签</h4>
+          <div class="list-unstyled tags-cloud">
+          
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/chartmuseum">chartmuseum(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/ci/cd">ci/cd(2)</a>
+            
+          
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/devops">devops(5)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/docker">docker(5)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/draft">draft(2)</a>
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/git">git(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/github">github(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/gogs">gogs(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/helm">helm(4)</a>
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/jenkins">jenkins(3)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/jenkins-x">jenkins-x(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/jx">jx(3)</a>
+            
+          
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/kubectl">kubectl(6)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/kubernetes">kubernetes(13)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/ldap">ldap(4)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/life">life(2)</a>
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/monocular">monocular(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/motivational">motivational(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/nexus">nexus(2)</a>
+            
+          
+            
+          
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/skaffold">skaffold(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/win">win(2)</a>
+            
+          
+            
+            <a href="https://www.k8sz.com/tags/yaml">yaml(6)</a>
+            
+          
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/">ZB</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/sitemap.xml">网站地图</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/page/archive/">文章归档</a>
+            &nbsp;&bull;&nbsp;
+          
+        </p>
+
+        
+        <p class="credits theme-by text-muted">
+
+          由 <a href="http://gohugo.io">Hugo v0.55.6</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src='https://www.k8sz.com/js/bundle.min.8242ab5c3c016acc49d8c7717b5c1a9f24511d0b9e5d1c0e44f2b907c76b5987.js' integrity='sha256-gkKrXDwBasxJ2Mdxe1wanyRRHQueXRwORPK5B8drWYc='></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146440849-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146440849-1');
+</script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script type="text/javascript">
+ 
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("Docker", "Kubernetes", "Prometheus", "Envoy", "Istio", "Service Mesh", "Cloud Native", "Golang", "DevOps");
+        var $i = $("<span />").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        function randomColor() {
+          var flakeColor = new Array("#FFDA65", "#00BFFF", "#BA55D3", "#FFA07A", "#87CEEB", "#FFB6C1");
+          var snowColor = flakeColor[Math.floor(flakeColor.length * Math.random())];
+          return snowColor;
+        }
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": randomColor()
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+
+<script type="text/javascript" src="https://www.k8sz.com/js/lightbox.js"></script>
+
+
+<script src="https://cdn.plyr.io/3.4.7/plyr.js"></script>
+<script>const player = new Plyr('#player');</script>
+
+
+  </body>
+</html>
+

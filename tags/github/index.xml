@@ -13,10 +13,10 @@
     
     <item>
       <title>kubernetes之Jenkins 流水线语法</title>
-      <link>https://www.k8sz.com/post/kubernetesldap/</link>
+      <link>https://www.k8sz.com/post/kubernetes-jenkinsfile/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://www.k8sz.com/post/kubernetesldap/</guid>
+      <guid>https://www.k8sz.com/post/kubernetes-jenkinsfile/</guid>
       <description>&lt;p&gt;声明式和脚本化的流水线从根本上是不同的。 声明式流水线的是 Jenkins 流水线更近的特性:&lt;/p&gt;
 
 &lt;ul&gt;

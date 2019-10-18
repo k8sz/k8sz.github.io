@@ -3,6 +3,41 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.k8sz.com/post/helm2-to-v3/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/post/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/helm/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/kubernetes/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.k8sz.com/tags/chartmuseum/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -27,24 +62,6 @@
   </url>
   
   <url>
-    <loc>https://www.k8sz.com/post/</loc>
-    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/tags/</loc>
-    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/</loc>
-    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://www.k8sz.com/tags/devops/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -52,12 +69,6 @@
   
   <url>
     <loc>https://www.k8sz.com/tags/github/</loc>
-    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/tags/helm/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -81,13 +92,7 @@
   </url>
   
   <url>
-    <loc>https://www.k8sz.com/tags/kubernetes/</loc>
-    <lastmod>2019-10-14T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/post/kubernetesldap/</loc>
+    <loc>https://www.k8sz.com/post/kubernetes-jenkinsfile/</loc>
     <lastmod>2019-10-14T00:00:00+00:00</lastmod>
   </url>
   

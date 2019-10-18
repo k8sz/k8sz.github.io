@@ -6,10 +6,28 @@
     <description>Recent content in Tags on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>helm</title>
+      <link>https://www.k8sz.com/tags/helm/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/helm/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://www.k8sz.com/tags/kubernetes/</link>
+      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Chartmuseum</title>
@@ -66,15 +84,6 @@
     </item>
     
     <item>
-      <title>helm</title>
-      <link>https://www.k8sz.com/tags/helm/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>jenkins</title>
       <link>https://www.k8sz.com/tags/jenkins/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
@@ -98,15 +107,6 @@
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/jx/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://www.k8sz.com/tags/kubernetes/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     
