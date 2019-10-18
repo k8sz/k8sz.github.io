@@ -6,10 +6,35 @@
     <description>Recent content in Posts on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 17 Sep 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 14 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>kubernetes之Jenkins 流水线语法</title>
+      <link>https://www.k8sz.com/post/kubernetesldap/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/kubernetesldap/</guid>
+      <description>&lt;p&gt;声明式和脚本化的流水线从根本上是不同的。 声明式流水线的是 Jenkins 流水线更近的特性:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;相比脚本化的流水线语法，它提供更丰富的语法特性,&lt;/li&gt;
+&lt;li&gt;是为了使编写和读取流水线代码更容易而设计的。&lt;/li&gt;
+&lt;/ul&gt;</description>
+    </item>
+    
+    <item>
+      <title>kubernetes之NginxIngress HTTPS自动化</title>
+      <link>https://www.k8sz.com/post/kubernetes-ingress-https/</link>
+      <pubDate>Tue, 08 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/kubernetes-ingress-https/</guid>
+      <description>&lt;p&gt;cert-manager是本地&lt;a href=&#34;https://kubernetes.io/&#34;&gt;Kubernetes&lt;/a&gt;证书管理控制器。它可以帮助从各种来源颁发证书，例如 &lt;a href=&#34;https://letsencrypt.org/&#34;&gt;Let&amp;rsquo;s Encrypt&lt;/a&gt;，&lt;a href=&#34;https://www.vaultproject.io/&#34;&gt;HashiCorp Vault&lt;/a&gt;，&lt;a href=&#34;https://www.venafi.com/&#34;&gt;Venafi&lt;/a&gt;，简单签名密钥对或自签名&lt;/p&gt;
+
+&lt;p&gt;本文主要说明如何在kubernetes安装和设置cert-manager。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>kubernetes之集群数据备份</title>
@@ -50,17 +75,6 @@
     </item>
     
     <item>
-      <title>Linux之git常用命令</title>
-      <link>https://www.k8sz.com/post/linux-git-command/</link>
-      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/post/linux-git-command/</guid>
-      <description>&lt;p&gt;git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。  Git 是 Linus Torvalds为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件&lt;/p&gt;
-
-&lt;p&gt;本文主要介绍git一些常用命令&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>kubernetes之prometheus简介</title>
       <link>https://www.k8sz.com/post/kubernetes-prometheus-intro/</link>
       <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
@@ -69,6 +83,17 @@
       <description>&lt;p&gt;kubernetes作为当下最炙手可热的容器编排平台，在给应用部署运维带来便捷的同时，也给应用及性能监控带来了新的挑战。&lt;/p&gt;
 
 &lt;p&gt;本文给大家分享一款十分火热的开源监控工具Prometheus，让我们一起来看它是如何兼顾传统的应用监控、主机性能监控和Kubernetes监控的。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux之git常用命令</title>
+      <link>https://www.k8sz.com/post/linux-git-command/</link>
+      <pubDate>Wed, 28 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/linux-git-command/</guid>
+      <description>&lt;p&gt;git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。  Git 是 Linus Torvalds为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件&lt;/p&gt;
+
+&lt;p&gt;本文主要介绍git一些常用命令&lt;/p&gt;</description>
     </item>
     
     <item>
@@ -111,7 +136,7 @@ Gogs 的目标是打造一个最简单、最快速和最轻松的方式搭建自
     </item>
     
     <item>
-      <title>kubernetes之使用kubeadm安装1.15.2</title>
+      <title>kubernetes之使用kubeadm安装1.15.4</title>
       <link>https://www.k8sz.com/post/kuberneteskubeadm/</link>
       <pubDate>Sat, 17 Aug 2019 00:00:00 +0000</pubDate>
       

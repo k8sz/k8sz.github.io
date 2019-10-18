@@ -6,9 +6,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
 
-  <title>kubernetes之使用kubeadm安装1.15.2-https://www.k8sz.com/,ZB的博客,Kubernetes,Docker,istio,Golang,Cloud Native</title>
-  <meta property="og:title" content="kubernetes之使用kubeadm安装1.15.2" />
-  <meta name="twitter:title" content="kubernetes之使用kubeadm安装1.15.2" />
+  <title>kubernetes之使用kubeadm安装1.15.4-https://www.k8sz.com/,ZB的博客,Kubernetes,Docker,istio,Golang,Cloud Native</title>
+  <meta property="og:title" content="kubernetes之使用kubeadm安装1.15.4" />
+  <meta name="twitter:title" content="kubernetes之使用kubeadm安装1.15.4" />
 
   <meta name="description" content="Kubeadm 是一个工具，它提供了 kubeadm init 以及 kubeadm join 这两个命令作为快速创建 kubernetes 集群的最佳实践。
 kubeadm 通过执行必要的操作来启动和运行一个最小可用的集群。它被故意设计为只关心启动集群，而不是之前的节点准备工作。同样的，诸如安装各种各样值得拥有的插件，例如 Kubernetes Dashboard、监控解决方案以及特定云提供商的插件，这些都不在它负责的范围。
@@ -31,7 +31,7 @@ kubeadm 通过执行必要的操作来启动和运行一个最小可用的集群
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ZB" />
 
-  <meta name="generator" content="Hugo 0.56.3" />
+  <meta name="generator" content="Hugo 0.58.3" />
   <link rel="canonical" href="https://www.k8sz.com/post/kuberneteskubeadm/" />
   <link rel="alternate" href="https://www.k8sz.com/index.xml" type="application/rss+xml" title="ZB">
 
@@ -154,7 +154,7 @@ if (!doNotTrack) {
           <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
               <div class="post-heading">
-                <h1>kubernetes之使用kubeadm安装1.15.2</h1>
+                <h1>kubernetes之使用kubeadm安装1.15.4</h1>
                   
                   
                     <span class="post-meta">
@@ -179,7 +179,7 @@ if (!doNotTrack) {
         <div class="row">
           <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
             <div class="post-heading">
-              <h1>kubernetes之使用kubeadm安装1.15.2</h1>
+              <h1>kubernetes之使用kubeadm安装1.15.4</h1>
                 
                 
                   <span class="post-meta">
@@ -258,7 +258,6 @@ if (!doNotTrack) {
 <li><a href="#如是单master节点请忽略以下操作">如是单master节点请忽略以下操作</a>
 <ul>
 <li><a href="#修改-etc-hosts文件">修改/etc/hosts文件</a></li>
-<li><a href="#免密登陆和证书复制">免密登陆和证书复制</a></li>
 <li><a href="#另外两台主机部署为master节点">另外两台主机部署为master节点</a></li>
 </ul></li>
 <li><a href="#其他问题">其他问题</a>
@@ -318,7 +317,7 @@ CentOS Linux release <span style="color:#bd93f9">7</span>.6.1810 <span style="co
 ::1     localhost       localhost.localdomain   localhost6      localhost6.localdomain6
 <span style="color:#bd93f9">127</span>.0.0.1       localhost       localhost.localdomain   localhost4      localhost4.localdomain4
 <span style="color:#bd93f9">192</span>.168.1.32    CATS001 CATS001
-<span style="color:#bd93f9">192</span>.168.1.32    k8s.xiaobu.vip</code></pre></div>
+<span style="color:#bd93f9">192</span>.168.1.32    k8s.zb.vip</code></pre></div>
 <p>如有其他节点也可以添加在里面，这里我只有一个节点</p>
 
 <h3 id="关闭防火墙">关闭防火墙</h3>
@@ -450,7 +449,7 @@ systemctl start docker</code></pre></div>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#8be9fd;font-style:italic">echo</span> <span style="color:#f1fa8c">&#34;&#34;&#34;
 </span><span style="color:#f1fa8c">apiVersion: kubeadm.k8s.io/v1beta2
 </span><span style="color:#f1fa8c">kind: ClusterConfiguration
-</span><span style="color:#f1fa8c">kubernetesVersion: v1.15.2
+</span><span style="color:#f1fa8c">kubernetesVersion: v1.15.4
 </span><span style="color:#f1fa8c">imageRepository: registry.aliyuncs.com/google_containers
 </span><span style="color:#f1fa8c">controlPlaneEndpoint: &#34;</span>k8s.zb.vip:6443<span style="color:#f1fa8c">&#34;
 </span><span style="color:#f1fa8c">apiServer:
@@ -552,29 +551,10 @@ cats001      Ready    master   8m4s   v1.15.2</code></pre></div>
 <span style="color:#bd93f9">192</span>.168.1.25	k8s.zb.vip
 <span style="color:#bd93f9">192</span>.168.1.25    k8s.zb.vip
 <span style="color:#bd93f9">192</span>.168.1.26    k8s.zb.vip</code></pre></div>
-<h3 id="免密登陆和证书复制">免密登陆和证书复制</h3>
-
-<p>第一个master节点设置免密登陆到这两台主机</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#6272a4"># 1、三次回车后，密钥生成完成</span>
-ssh-keygen
-<span style="color:#6272a4"># 2、拷贝密钥到其他节点</span>
-ssh-copy-id -i ~/.ssh/id_rsa.pub  用户名字@192.168.x.xxx</code></pre></div>
-<p>证书复制到其他两台主机</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ff79c6">for</span> ip in <span style="color:#bd93f9">192</span>.168.1.25 <span style="color:#bd93f9">192</span>.168.1.26; <span style="color:#ff79c6">do</span>
-ssh <span style="color:#8be9fd;font-style:italic">$ip</span> <span style="color:#f1fa8c">&#34;mkdir -p /etc/kubernetes/pki/etcd; mkdir -p ~/.kube/&#34;</span>
-scp /etc/kubernetes/pki/ca.crt <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/ca.crt
-scp /etc/kubernetes/pki/ca.key <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/ca.key
-scp /etc/kubernetes/pki/sa.key <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/sa.key
-scp /etc/kubernetes/pki/sa.pub <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/sa.pub
-scp /etc/kubernetes/pki/front-proxy-ca.crt <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/front-proxy-ca.crt
-scp /etc/kubernetes/pki/front-proxy-ca.key <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/front-proxy-ca.key
-scp /etc/kubernetes/pki/etcd/ca.crt <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/etcd/ca.crt
-scp /etc/kubernetes/pki/etcd/ca.key <span style="color:#8be9fd;font-style:italic">$ip</span>:/etc/kubernetes/pki/etcd/ca.key
-<span style="color:#ff79c6">done</span></code></pre></div>
 <h3 id="另外两台主机部署为master节点">另外两台主机部署为master节点</h3>
 
 <p>两台主机都运行</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubeadm join k8s.xiaobu.vip:6443 --token 8lp09d.m961tfj5cctkq76s --discovery-token-ca-cert-hash sha256:f0553763add9e232b4eebde18b018f5cd09a0c43afe6f490e38d0f30ba4f2708 --control-plane --certificate-key 305bb07984ed0f9a552fa0a4b172163f5cc1f772f13ad4b8daf983bc35eb0547</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubeadm join k8s.zb.vip:6443 --token 8lp09d.m961tfj5cctkq76s --discovery-token-ca-cert-hash sha256:f0553763add9e232b4eebde18b018f5cd09a0c43afe6f490e38d0f30ba4f2708 --control-plane --certificate-key 305bb07984ed0f9a552fa0a4b172163f5cc1f772f13ad4b8daf983bc35eb0547</code></pre></div>
 <p>此命令和Node节点加入集群在第一个master节点安装成功时打印出来留意并做好保存</p>
 
 <h2 id="其他问题">其他问题</h2>
@@ -589,14 +569,20 @@ kubectl taint nodes master01 node-role.kubernetes.io/master=:NoSchedule    #设�
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubeadm reset -f
 iptables -F <span style="color:#ff79c6">&amp;&amp;</span> iptables -t nat -F <span style="color:#ff79c6">&amp;&amp;</span> iptables -t mangle -F <span style="color:#ff79c6">&amp;&amp;</span> iptables -X
 ipvsadm --clear
+systemctl stop kubelet
+systemctl stop docker
+rm -rf /var/lib/cni/
+rm -rf /var/lib/kubelet/*
+rm -rf /etc/cni/
 ifconfig cni0 down
-ip link delete cni0
 ifconfig flannel.1 down
+ifconfig docker0 down
+ip link delete cni0
 ip link delete flannel.1
-rm -rf /var/lib/cni/</code></pre></div>
+systemctl start docker</code></pre></div>
 <h3 id="pod无法访问api-service">pod无法访问api-service</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">iptables -t nat -I POSTROUTING -s <span style="color:#bd93f9">10</span>.244.0.0/16 -j MASQUERADE</code></pre></div>
-<p>其中10.88.0.0/16为POD使用的网络</p>
+<p>其中10.244.0.0/16为POD使用的网络</p>
 
 <h3 id="生产环境node移除">生产环境node移除</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl cordon node01 <span style="color:#6272a4">#标记node01不可调度</span>
@@ -618,7 +604,9 @@ kubeadm token create --ttl <span style="color:#bd93f9">0</span>
 kubeadm token list
 获取ca证书sha256编码hash值
 openssl x509 -pubkey -in /etc/kubernetes/pki/ca.crt | openssl rsa -pubin -outform der <span style="color:#bd93f9">2</span>&gt;/dev/null | openssl dgst -sha256 -hex | sed <span style="color:#f1fa8c">&#39;s/^.* //&#39;</span>
-kubeadm join masterIP:6443 --token xxxxxx --discovery-token-ca-cert-hash xxxxx</code></pre></div>
+kubeadm join masterIP:6443 --token xxxxxx --discovery-token-ca-cert-hash xxxxx
+主节点忘记
+kubeadm init phase upload-certs --upload-certs</code></pre></div>
 <h3 id="dns测试">DNS测试</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">kubectl run curl --rm --image<span style="color:#ff79c6">=</span>radial/busyboxplus:curl -it
 nslookup kubernetes.default</code></pre></div>
@@ -746,7 +734,7 @@ kubectl logs &lt;PodName&gt; -n &lt;Namespace&gt;</code></pre></div>
         
         <p class="credits theme-by text-muted">
 
-          由 <a href="http://gohugo.io">Hugo v0.56.3</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+          由 <a href="http://gohugo.io">Hugo v0.58.3</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
 
         </p>
       </div>
