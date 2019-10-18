@@ -31,7 +31,7 @@ kubeadm 通过执行必要的操作来启动和运行一个最小可用的集群
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ZB" />
 
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.55.6" />
   <link rel="canonical" href="https://www.k8sz.com/post/kuberneteskubeadm/" />
   <link rel="alternate" href="https://www.k8sz.com/index.xml" type="application/rss+xml" title="ZB">
 
@@ -440,9 +440,7 @@ systemctl start docker</code></pre></div>
 <p>安装kuberlet kuberadm kubectl</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install -y kubelet kubeadm kubectl</code></pre></div>
 <p>设置kubelet开机启动</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl <span style="color:#8be9fd;font-style:italic">enable</span> kubelet</code></pre></div></li>
-</ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">systemctl <span style="color:#8be9fd;font-style:italic">enable</span> kubelet</code></pre></div>
 <h2 id="通过kubradm初始化集群">通过kubradm初始化集群</h2>
 
 <h3 id="编写节点配置文件">编写节点配置文件</h3>
@@ -453,20 +451,22 @@ systemctl start docker</code></pre></div>
 </span><span style="color:#f1fa8c">imageRepository: registry.aliyuncs.com/google_containers
 </span><span style="color:#f1fa8c">controlPlaneEndpoint: &#34;</span>k8s.zb.vip:6443<span style="color:#f1fa8c">&#34;
 </span><span style="color:#f1fa8c">apiServer:
-</span><span style="color:#f1fa8c">  certSANS:
-</span><span style="color:#f1fa8c">  - &#34;</span>k8s.zb.vip<span style="color:#f1fa8c">&#34;
+</span><span style="color:#f1fa8c">certSANS:
+</span><span style="color:#f1fa8c">- &#34;</span>k8s.zb.vip<span style="color:#f1fa8c">&#34;
 </span><span style="color:#f1fa8c">networking:
-</span><span style="color:#f1fa8c">  podSubnet: 10.244.0.0/16
-</span><span style="color:#f1fa8c">  serviceSubnet: 10.88.0.0/16
+</span><span style="color:#f1fa8c">podSubnet: 10.244.0.0/16
+</span><span style="color:#f1fa8c">serviceSubnet: 10.88.0.0/16
 </span><span style="color:#f1fa8c">---
 </span><span style="color:#f1fa8c">apiVersion: kubeproxy.config.k8s.io/v1alpha1
 </span><span style="color:#f1fa8c">kind: KubeProxyConfiguration
 </span><span style="color:#f1fa8c">mode: ipvs
-</span><span style="color:#f1fa8c">&#34;&#34;&#34;</span> &gt; /etc/kubernetes/kubeadm-config.yaml</code></pre></div>
-<ul>
-<li>指定Kubernetes版本</li>
-<li>指定apiServer，这里使用了域名，主要是为以后高可用做准备</li>
-<li>指定kube-proxy为IPVS模式，默认为iptbles</li>
+</span><span style="color:#f1fa8c">&#34;&#34;&#34;</span> &gt; /etc/kubernetes/kubeadm-config.yaml</code></pre></div></li>
+
+<li><p>指定Kubernetes版本</p></li>
+
+<li><p>指定apiServer，这里使用了域名，主要是为以后高可用做准备</p></li>
+
+<li><p>指定kube-proxy为IPVS模式，默认为iptbles</p></li>
 </ul>
 
 <h3 id="初始化master的kubelet">初始化master的kubelet</h3>
@@ -542,13 +542,13 @@ cats001      Ready    master   8m4s   v1.15.2</code></pre></div>
 
 <h3 id="修改-etc-hosts文件">修改/etc/hosts文件</h3>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#ff79c6">[</span>root@CATS001 kubernetes<span style="color:#ff79c6">]</span><span style="color:#6272a4"># cat /etc/hosts</span>
-::1	localhost	localhost.localdomain	localhost6	localhost6.localdomain6
-<span style="color:#bd93f9">127</span>.0.0.1	localhost	localhost.localdomain	localhost4	localhost4.localdomain4
+::1 localhost   localhost.localdomain   localhost6  localhost6.localdomain6
+<span style="color:#bd93f9">127</span>.0.0.1   localhost   localhost.localdomain   localhost4  localhost4.localdomain4
 <span style="color:#bd93f9">192</span>.168.1.27    S001
 <span style="color:#bd93f9">192</span>.168.1.25    S002
 <span style="color:#bd93f9">192</span>.168.1.26    S003
 
-<span style="color:#bd93f9">192</span>.168.1.25	k8s.zb.vip
+<span style="color:#bd93f9">192</span>.168.1.25    k8s.zb.vip
 <span style="color:#bd93f9">192</span>.168.1.25    k8s.zb.vip
 <span style="color:#bd93f9">192</span>.168.1.26    k8s.zb.vip</code></pre></div>
 <h3 id="另外两台主机部署为master节点">另外两台主机部署为master节点</h3>
@@ -734,7 +734,7 @@ kubectl logs &lt;PodName&gt; -n &lt;Namespace&gt;</code></pre></div>
         
         <p class="credits theme-by text-muted">
 
-          由 <a href="http://gohugo.io">Hugo v0.58.3</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+          由 <a href="http://gohugo.io">Hugo v0.55.6</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
 
         </p>
       </div>
@@ -744,7 +744,7 @@ kubectl logs &lt;PodName&gt; -n &lt;Namespace&gt;</code></pre></div>
 
 
 
-<script src='https://www.k8sz.com/js/bundle.min.b7dfdd821c9f407aafd1909c145d179393173d1476e753e70269be48968a707d.js' integrity='sha256-t9/dghyfQHqv0ZCcFF0Xk5MXPRR251PnAmm&#43;SJaKcH0='></script>
+<script src='https://www.k8sz.com/js/bundle.min.8242ab5c3c016acc49d8c7717b5c1a9f24511d0b9e5d1c0e44f2b907c76b5987.js' integrity='sha256-gkKrXDwBasxJ2Mdxe1wanyRRHQueXRwORPK5B8drWYc='></script>
 
 
 

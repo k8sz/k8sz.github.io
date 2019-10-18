@@ -21,7 +21,7 @@
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="ZB" />
 
-  <meta name="generator" content="Hugo 0.58.3" />
+  <meta name="generator" content="Hugo 0.55.6" />
   <link rel="canonical" href="https://www.k8sz.com/" />
   <link rel="alternate" href="https://www.k8sz.com/index.xml" type="application/rss+xml" title="ZB">
 
@@ -194,8 +194,12 @@ if (!doNotTrack) {
           	
 
             <article class="post-preview">
-              <a href="https://www.k8sz.com/post/">
-                <h2 class="post-title">Posts</h2>
+              <a href="https://www.k8sz.com/post/kubernetesldap/">
+                <h2 class="post-title">kubernetes之Jenkins 流水线语法</h2>
+                
+                  <h3 class="post-subtitle">
+                  基于kubernetes 的CI/CD
+                  </h3>
                 
               </a>
 
@@ -209,10 +213,720 @@ if (!doNotTrack) {
 
               <div class="post-entry">
                 
-                  
+                  <p>声明式和脚本化的流水线从根本上是不同的。 声明式流水线的是 Jenkins 流水线更近的特性:</p>
+
+<ul>
+<li>相比脚本化的流水线语法，它提供更丰富的语法特性,</li>
+<li>是为了使编写和读取流水线代码更容易而设计的。</li>
+</ul>
+                  <a href="https://www.k8sz.com/post/kubernetesldap/" class="post-read-more">[阅读全文]</a>
                 
               </div>
 
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jenkins-x/">jenkins x</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/devops/">devops</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jx/">jx</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/github/">github</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/chartmuseum/">Chartmuseum</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/monocular/">Monocular</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/nexus/">Nexus</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/draft/">Draft</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/skaffold/">skaffold</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/helm/">helm</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jenkins/">jenkins</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-ingress-https/">
+                <h2 class="post-title">kubernetes之NginxIngress HTTPS自动化</h2>
+                
+                  <h3 class="post-subtitle">
+                  使用 Let&#39;s Encrypt 实现
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 October 8, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>cert-manager是本地<a href="https://kubernetes.io/">Kubernetes</a>证书管理控制器。它可以帮助从各种来源颁发证书，例如 <a href="https://letsencrypt.org/">Let&rsquo;s Encrypt</a>，<a href="https://www.vaultproject.io/">HashiCorp Vault</a>，<a href="https://www.venafi.com/">Venafi</a>，简单签名密钥对或自签名</p>
+
+<p>本文主要说明如何在kubernetes安装和设置cert-manager。</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-ingress-https/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ingress/">ingress</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/nginx-ingress/">nginx-ingress</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/cert-manager/">Cert manager</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-data-backup/">
+                <h2 class="post-title">kubernetes之集群数据备份</h2>
+                
+                  <h3 class="post-subtitle">
+                  kubernetes基础篇
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 September 17, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Etcd是Kubernetes集群中的一个十分重要的组件，用于保存集群所有的网络配置和对象的状态信息</p>
+
+<ul>
+<li>网络插件flannel、对于其它网络插件也需要用到etcd存储网络的配置信息</li>
+<li>kubernetes本身，包括各种对象的状态和元信息配置</li>
+</ul>
+
+<p>数据备份重中之重，本文主要介绍备份kubernetes etcd数据和kubernetes所使用的数据</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-data-backup/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/k8s/">k8s</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/data/">data</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/backup/">backup</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-jx-install/">
+                <h2 class="post-title">kubernetes之Jenkins x安装</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 September 16, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>jx是云原生CICD，devops的一个最佳实践之一，目前在快速的发展成熟中。</p>
+
+<p>本文主要介绍如何在现有kuberneter 上安装Jenkins x，</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-jx-install/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ldap/">ldap</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/docker/">docker</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jenkins/">jenkins</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ci/cd/">ci/cd</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jx/">jx</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-jx-component/">
+                <h2 class="post-title">kubernetes之Jenkins x主要组件</h2>
+                
+                  <h3 class="post-subtitle">
+                  基于kubernetes 的CI/CD
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 September 6, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Jenkins X 是一个高度集成化的CI/CD平台，基于Jenkins和Kubernetes实现，旨在解决微服务体系架构下的云原生应用的持续交付的问题，简化整个云原生应用的开发、运行和部署过程。</p>
+
+<p>jx是云原生CICD，devops的一个最佳实践之一，目前在快速的发展成熟中,这里介绍jx用到的一些相关组件</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-jx-component/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jenkins-x/">jenkins x</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/devops/">devops</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jx/">jx</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/github/">github</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/chartmuseum/">Chartmuseum</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/monocular/">Monocular</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/nexus/">Nexus</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/draft/">Draft</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/skaffold/">skaffold</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/helm/">helm</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/jenkins/">jenkins</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/linux-git-command/">
+                <h2 class="post-title">Linux之git常用命令</h2>
+                
+                  <h3 class="post-subtitle">
+                  Linux基础篇
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 28, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>git是一个开源的分布式版本控制系统，可以有效、高速地处理从很小到非常大的项目版本管理。  Git 是 Linus Torvalds为了帮助管理 Linux 内核开发而开发的一个开放源码的版本控制软件</p>
+
+<p>本文主要介绍git一些常用命令</p>
+                  <a href="https://www.k8sz.com/post/linux-git-command/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/linux/">linux</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/git/">git</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-prometheus-intro/">
+                <h2 class="post-title">kubernetes之prometheus简介</h2>
+                
+                  <h3 class="post-subtitle">
+                  kubernetes监控篇
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 28, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>kubernetes作为当下最炙手可热的容器编排平台，在给应用部署运维带来便捷的同时，也给应用及性能监控带来了新的挑战。</p>
+
+<p>本文给大家分享一款十分火热的开源监控工具Prometheus，让我们一起来看它是如何兼顾传统的应用监控、主机性能监控和Kubernetes监控的。</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-prometheus-intro/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/cicd/">cicd</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/devops/">devops</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/prometheus/">prometheus</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/%E7%9B%91%E6%8E%A7/">监控</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetes-drone-install/">
+                <h2 class="post-title">kubernetes CI/CD之drone安装</h2>
+                
+                  <h3 class="post-subtitle">
+                  基于gogs
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 27, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Drone是一种基于容器技术的持续交付系统。使用简单的YAML配置文件来定义和执行Docker容器中定义的Pipeline，Drone主要由两个部分组成：</p>
+
+<ul>
+<li>Server端负责身份认证，仓库配置，用户，Secrets以及Webhook相关配置</li>
+<li>Agent端端用于接受构建的作业和真正用于运行的 Pipeline 工作流</li>
+</ul>
+
+<p>Server 和 Agent 都是非常轻量级的服务，大概只使用 10~15MB 内存</p>
+
+<p>本文将介绍在kubernetes 集群基于Drone搭建一个CI/CD服务。</p>
+                  <a href="https://www.k8sz.com/post/kubernetes-drone-install/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ldap/">ldap</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/docker/">docker</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/gogs/">gogs</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/devops/">devops</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ci/cd/">ci/cd</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/drone/">drone</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetesgogs/">
+                <h2 class="post-title">kubernetes之gogs安装</h2>
+                
+                  <h3 class="post-subtitle">
+                  配置LDAP验证
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 26, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Gogs 是一款极易搭建的自助 Git 服务。
+Gogs 的目标是打造一个最简单、最快速和最轻松的方式搭建自助 Git 服务。使用 Go 语言开发使得 Gogs 能够通过独立的二进制分发，并且支持 Go 语言支持的 所有平台，包括 Linux、Mac OS X、Windows 以及 ARM 平台。</p>
+
+<p>本文介绍在kubernetes安装gogs git服务</p>
+                  <a href="https://www.k8sz.com/post/kubernetesgogs/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ldap/">ldap</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/docker/">docker</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/gogs/">gogs</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/git/">git</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kuberneteshelm/">
+                <h2 class="post-title">kubernetes之Helm安装</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 17, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Helm可帮助您管理Kubernetes应用程序 - Helm Charts可帮助您定义，安装和升级最复杂的Kubernetes应用程序。Helm就相当于kubernetes环境下的yum包管理工具。</p>
+                  <a href="https://www.k8sz.com/post/kuberneteshelm/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/helm/">helm</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/docker/">docker</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kuberneteskubeadm/">
+                <h2 class="post-title">kubernetes之使用kubeadm安装1.15.4</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 17, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Kubeadm 是一个工具，它提供了 kubeadm init 以及 kubeadm join 这两个命令作为快速创建 kubernetes 集群的最佳实践。
+kubeadm 通过执行必要的操作来启动和运行一个最小可用的集群。它被故意设计为只关心启动集群，而不是之前的节点准备工作。同样的，诸如安装各种各样值得拥有的插件，例如 Kubernetes Dashboard、监控解决方案以及特定云提供商的插件，这些都不在它负责的范围。
+相反，我们期望由一个基于 kubeadm 从更高层设计的更加合适的工具来做这些事情；并且，理想情况下，使用 kubeadm 作为所有部署的基础将会使得创建一个符合期望的集群变得容易。</p>
+
+<p>以下是简述使用kubeadm搭建一个集群的过程</p>
+                  <a href="https://www.k8sz.com/post/kuberneteskubeadm/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubeadm/">kubeadm</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetesldap/">
+                <h2 class="post-title">kubernetes之LDAP安装</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 16, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>轻型目录访问协议（英文：Lightweight Directory Access Protocol 缩写: LDAP）是一个开放的，中立的，工业标准的应用协议，通过IP协议提供访问控制和维护分布式信息的目录信息。
+可以这样讲：市面上只要你能够想像得到的所有工具软件，全部都支持LDAP协议。比如说你公司要安装一个项目管理工具，那么这个工具几乎必然支持LDAP协议，你公司要安装一个bug管理工具，这工具必然也支持LDAP协议，你公司要安装一套软件版本管理工具，这工具也必然支持LDAP协议。LDAP协议的好处就是你公司的所有员工在所有这些工具里共享同一套用户名和密码，来人的时候新增一个用户就能自动访问所有系统，走人的时候一键删除就取消了他对所有系统的访问权限，这就是LDAP。</p>
+
+<p>本文将介绍如何使用Helm在kubernetes 集群上搭建一个OpenLDAP服务。</p>
+                  <a href="https://www.k8sz.com/post/kubernetesldap/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/ldap/">ldap</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/docker/">docker</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/kubectl/">kubectl</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/yaml/">yaml</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/kubernetesopenings/">
+                <h2 class="post-title">Kubernetes 开篇</h2>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 15, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>Kubernetes是一个可移植，可扩展的开源平台，用于管理容器化工作负载和服务，有助于声明性配置和自动化。作为一个从业运维工作的人员，得益与容器Docker和容器编排Kubernetes的出现，解决了许多运维中出现的痛点，提高运维效率。Kubernetes是如何解决运维中出现的痛点的呢？</p>
+                  <a href="https://www.k8sz.com/post/kubernetesopenings/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/kubernetes/">kubernetes</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/devops/">devops</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/happiness/">
+                <h2 class="post-title">不要站在幸福里找幸福</h2>
+                
+                  <h3 class="post-subtitle">
+                  转自 论正能量
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 14, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>生活里，我们都有一个错觉：幸福总是别人的，唯有烦恼属于自己！
+于是我们一天天感受着所谓的烦恼一
+于是，我们一天天感受着所谓的烦恼，一天天寻找着，其实就在身边的幸福！
+于是我们一天天感受着所谓的烦恼一
+曾经有这样一项有趣的调查：世界上什么人最幸福？</p>
+                  <a href="https://www.k8sz.com/post/happiness/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/life/">life</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/win/">win</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/motivational/">motivational</a>&nbsp;
+                
+                </span>
+              
+            </article>
+
+          
+
+          	
+
+            <article class="post-preview">
+              <a href="https://www.k8sz.com/post/sixregrets/">
+                <h2 class="post-title">全文仅42个字道尽人生六大悔事</h2>
+                
+                  <h3 class="post-subtitle">
+                  转自 领导者成功思维
+                  </h3>
+                
+              </a>
+
+              <span class="post-meta">
+  
+    发表于 August 14, 2019
+  
+  
+</span>
+
+
+              <div class="post-entry">
+                
+                  <p>一辈子那么长，谁的心里没有几件后悔的事。北宋名相寇准有一篇传世奇文，全文短短六句话，四十二个字，却说尽了人生六大悔事，看完后不禁潸然泪下。</p>
+
+<p>晚清第一名臣曾国藩，对这篇文章推崇备至，将他奉为经典，时刻用于自省。</p>
+
+<p>这六大悔事，看看你占了几样？</p>
+                  <a href="https://www.k8sz.com/post/sixregrets/" class="post-read-more">[阅读全文]</a>
+                
+              </div>
+
+              
+                <span class="post-meta">
+                
+                  #<a href="https://www.k8sz.com/tags/life/">life</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/win/">win</a>&nbsp;
+                
+                  #<a href="https://www.k8sz.com/tags/motivational/">motivational</a>&nbsp;
+                
+                </span>
               
             </article>
 
@@ -222,7 +936,20 @@ if (!doNotTrack) {
         <div align="center" class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
 
-
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
           
           
         </div>
@@ -482,7 +1209,7 @@ if (!doNotTrack) {
         
         <p class="credits theme-by text-muted">
 
-          由 <a href="http://gohugo.io">Hugo v0.58.3</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+          由 <a href="http://gohugo.io">Hugo v0.55.6</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
 
         </p>
       </div>
@@ -492,7 +1219,7 @@ if (!doNotTrack) {
 
 
 
-<script src='https://www.k8sz.com/js/bundle.min.b7dfdd821c9f407aafd1909c145d179393173d1476e753e70269be48968a707d.js' integrity='sha256-t9/dghyfQHqv0ZCcFF0Xk5MXPRR251PnAmm&#43;SJaKcH0='></script>
+<script src='https://www.k8sz.com/js/bundle.min.8242ab5c3c016acc49d8c7717b5c1a9f24511d0b9e5d1c0e44f2b907c76b5987.js' integrity='sha256-gkKrXDwBasxJ2Mdxe1wanyRRHQueXRwORPK5B8drWYc='></script>
 
 
 

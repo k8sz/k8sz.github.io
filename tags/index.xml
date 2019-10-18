@@ -21,20 +21,38 @@
     </item>
     
     <item>
-      <title>devops</title>
-      <link>https://www.k8sz.com/tags/devops/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/devops/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Draft</title>
       <link>https://www.k8sz.com/tags/draft/</link>
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/draft/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Monocular</title>
+      <link>https://www.k8sz.com/tags/monocular/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/monocular/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nexus</title>
+      <link>https://www.k8sz.com/tags/nexus/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/nexus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>devops</title>
+      <link>https://www.k8sz.com/tags/devops/</link>
+      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/devops/</guid>
       <description></description>
     </item>
     
@@ -89,24 +107,6 @@
       <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Monocular</title>
-      <link>https://www.k8sz.com/tags/monocular/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/monocular/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Nexus</title>
-      <link>https://www.k8sz.com/tags/nexus/</link>
-      <pubDate>Mon, 14 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/nexus/</guid>
       <description></description>
     </item>
     
