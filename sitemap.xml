@@ -3,26 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://www.k8sz.com/post/helm2-to-v3/</loc>
-    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <loc>https://www.k8sz.com/post/linux-command/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>https://www.k8sz.com/post/</loc>
-    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.k8sz.com/tags/</loc>
-    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://www.k8sz.com/</loc>
-    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/command/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/linux/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/post/helm2-to-v3/</loc>
+    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -208,12 +225,6 @@
   <url>
     <loc>https://www.k8sz.com/post/kubernetes-prometheus-intro/</loc>
     <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/tags/linux/</loc>
-    <lastmod>2019-08-28T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
