@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+
+  <title>Linux之CPU-https://www.k8sz.com/,ZB的博客,Kubernetes,Docker,istio,Golang,Cloud Native</title>
+  <meta property="og:title" content="Linux之CPU" />
+  <meta name="twitter:title" content="Linux之CPU" />
+
+  <meta name="description" content="Linux基础篇">
+  <meta property="og:description" content="Linux基础篇">
+  <meta name="twitter:description" content="Linux基础篇">
+  <meta name="author" content=""/>
+  <link href='https://image.77s.vip/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta property="og:image" content="https://image.77s.vip/favicon.png" />
+  <meta name="twitter:image" content="https://image.77s.vip/favicon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta property="og:url" content="https://www.k8sz.com/post/linux-cpu/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="ZB" />
+
+  <meta name="generator" content="Hugo 0.55.6" />
+  <link rel="canonical" href="https://www.k8sz.com/post/linux-cpu/" />
+  <link rel="alternate" href="https://www.k8sz.com/index.xml" type="application/rss+xml" title="ZB">
+
+  
+  
+  <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700%7COpen+Sans:400,700" rel="stylesheet">
+  
+
+  <link rel="stylesheet" href='https://www.k8sz.com/css/bundle.min.d236889182ad0dba3ea8cf427c8c43c658a4b0d39ab889ff934e277a03537814.css' integrity='sha256-0jaIkYKtDbo&#43;qM9CfIxDxliksNOauIn/k04negNTeBQ='>
+
+  
+    
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <![endif]-->
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-146440849-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">切换导航</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://www.k8sz.com/">ZB</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="首页" href="https://www.k8sz.com/">首页</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Docker" href="https://www.k8sz.com/tags/docker">Docker</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="Kubernetes" href="https://www.k8sz.com/tags/kubernetes">Kubernetes</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="DevOps" href="https://www.k8sz.com/tags/devops">DevOps</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="励志人生" href="https://www.k8sz.com/tags/motivational">励志人生</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="关于" href="https://www.k8sz.com/auto">关于</a>
+            </li>
+          
+        
+
+        
+
+        
+
+        
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+
+
+
+    
+  
+  
+  
+
+
+
+
+  
+    <div id="header-big-imgs" data-num-img=1 data-img-src-1="https://www.k8sz.com/img/k8s/k8s001.jpg" ></div>
+  
+
+  <header class="header-section has-img">
+    
+      <div class="intro-header big-img">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="post-heading">
+                <h1>Linux之CPU</h1>
+                  
+                    
+                      <h2 class="post-subheading">Linux基础篇</h2>
+                    
+                  
+                  
+                    <span class="post-meta">
+  
+    发表于 October 22, 2019
+  
+  
+</span>
+
+
+                  
+              </div>
+            </div>
+          </div>
+        </div>
+        <span class="img-desc" style="display: inline;"></span>
+      </div>
+    
+    <div class="intro-header no-img">
+      
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="post-heading">
+              <h1>Linux之CPU</h1>
+                
+                  
+                    <h2 class="post-subheading">Linux基础篇</h2>
+                  
+                
+                
+                  <span class="post-meta">
+  
+    发表于 October 22, 2019
+  
+  
+</span>
+
+
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+
+
+
+<div class="container" role="main">
+  <div class="row">
+
+    
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <div>
+            
+            
+            <h5 id="tags" style="margin-top: 30px;">标签:
+              
+                  <a href="https://www.k8sz.com/tags/linux/">linux</a> &nbsp;
+              
+                  <a href="https://www.k8sz.com/tags/cpu/">cpu</a> &nbsp;
+              
+            </h5>
+            
+        </div>
+  
+        <article role="main" class="blog-post" itemprop="articleBody" id="content">
+          
+            
+          
+  
+          
+          
+          
+  
+          
+          
+          
+  
+
+          
+          
+          
+          <p>虽然CPU很小，但生产它的设备可不简单。如下图，就是一台重十几吨，占地上百平米，全世界都当宝贝的光刻机！</p>
+
+<h2 id="如何做一个cpu">如何做一个CPU</h2>
+
+<p>cpu是芯片的一种，我们以汉芯为例，看一下制作七步曲。
+➊ 提纯精度11个9的硅片（99.999999999%）
+➋ 生成晶圆
+➌ 使用光刻机加工晶圆
+➍ 使用刻蚀机沟槽
+➎ 完成P型半导体制作
+➏ 使用200号的粗砂纸抹掉原标志
+➐ 涂上新标志</p>
+
+<h2 id="找到占用cpu最高的线程">找到占用CPU最高的线程</h2>
+
+<p>java启动进程CPU炸了，我们要找到是谁引起的。这个谁不是进程，而是线程，离真相最近的那个。
+通常的做法是：
+➊ 在命令行输入top，然后shift+p查看占用CPU最高的进程，记下进程号
+➋ 在命令行输入top -Hp 进程号，查看占用CPU最高的线程
+➌ 使用printf 0x%x 线程号，得到其16进制线程号
+➍ 使用jstack 进程号得到java执行栈，然后grep16进制找到相应的信息</p>
+
+<p>但我想通过另外一种方式来实现这个功能（最多样化），顺便学几个其他常用的命令。挖矿</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">ps -eo %cpu,pid |sort -n -k1 -r | head -n <span style="color:#bd93f9">1</span> |  awk <span style="color:#f1fa8c">&#39;{print $2}&#39;</span> |xargs  top -b -n1 -Hp | grep COMMAND -A1 | tail -n <span style="color:#bd93f9">1</span> | awk <span style="color:#f1fa8c">&#39;{print $1}&#39;</span> | xargs <span style="color:#8be9fd;font-style:italic">printf</span> 0x%x</code></pre></div>
+<p>这一行Shell的意思是，找到使用CPU最高的进程之使用CPU最高的线程的16进制号。
+这么长的命令，是不是晕了？别怕，我们一点点来。通常情况下，练习熟练了命令中出现的这几个，就能够应对50%的常用工作了。
+<img src="https://mmbiz.qpic.cn/mmbiz_jpg/cvQbJDZsKLoKEzYJ8FiasYcicEajoFLc9TbOOdfXTRickXvDaaDvlIQfHUmOAQT4v5Tics7WW8II4vJcErdkfz5cicQ/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="img" /></p>
+
+<h2 id="有哪些查看cpu的命令">有哪些查看CPU的命令</h2>
+
+<h3 id="top">top</h3>
+
+<p>其实从上面命令就可以瞧出来，top和ps的命令是互通的，只不过表现形式不同，我们直接拿top来说。按数字1就可以显示每核CPU的使用情况。基本上都是些单词的缩写，看几遍就忘不掉了。比如 :</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#8be9fd;font-style:italic">us</span> <span style="color:#ff79c6">==</span>&gt; user CPU time</code></pre></div>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_jpg/cvQbJDZsKLpmfeATqwL9yhuTAxL0LibVR6TTnBRTGOqubY15UA3SYcttWGqCicV28o6g3nUoq1xgGDYMFjqwkyGA/640?wx_fmt=jpeg&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="img" />
+先记住这些判断准则，我们在示例中再聊：
+➊ 如果load超过了cpu核数，则负载过高
+➋ 如果wa过高，可初步判断I/O有问题
+➌ sy,si,hi,st，任何一个超过5%，都有问题
+➍ 进程状态长时处于D、Z、T状态，提高注意度
+➎ cpu不均衡，判断亲和性和优先级问题</p>
+
+<h3 id="vmstat">vmstat</h3>
+
+<p>vmstat 以另一种形式来展示一些信息。
+<img src="https://mmbiz.qpic.cn/mmbiz_gif/cvQbJDZsKLpmfeATqwL9yhuTAxL0LibVRppD6k7Qv4K3GYLicPmP9xBw186MTPo9icOQYvpDOyYalXwtaiafklFdsg/640?wx_fmt=gif&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1" alt="img" />
+除了关注类似top的一些指标，还有：
+➊ <code>b</code> 置于等待队列（等待资源、等待输入/输出）的内核线程数目。数字过大则cpu太忙。
+➋ <code>cs</code> 如果频繁的进行上下文切换，则考虑是否是线程数开的过多
+➌ <code>si</code>/<code>so</code> 显示了交换分区的现状，有时候会造成cpu问题，一并关注</p>
+
+<h3 id="sar">sar</h3>
+
+<p>是目前Linux上最为全面的系统性能分析工具之一，但可能没有预装。在centos上使用以下命令即可安装。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install sysstat -y</code></pre></div>
+<p>sar主要的好处是可以看到历史，显示友好，可以对结果进行二次处理。sar还有图形化工具，执行sar -A即可获得所有数据。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">https://github.com/vlsi/ksar</code></pre></div>
+<p>针对于CPU方面，我们关注：
+➊ sar -u  默认
+➋ sar -P ALL 每颗cpu的使用状态信息
+➌ sar -q  cpu队列的长度，runq-sz&gt;cpu count就表明有瓶颈了
+➍ sar -w  每秒上下文交换
+可以瞧见，关注的也就那几个点而已。</p>
+
+<h3 id="mpstat">mpstat</h3>
+
+<p>还有pidstat，包括彩色的dstat，功能都差不多， 用熟一个就ok了。</p>
+
+<h2 id="数据从何而来">数据从何而来</h2>
+
+<p>那么数据从何而来？
+/proc目录是一个虚拟目录，存储的是当前内核的一系列特殊文件，你不仅能查看一些状态，甚至能修改一些值来改变系统的行为。</p>
+
+<p>比如top的load （使用uptime命令得到同样的结果）。读取的就是
+/proc/loadavg 文件
+而每核cpu的信息，读取
+/proc/stat文件</p>
+
+<p>这些命令，是对/proc目录中一系列信息的解析和友好的展示，这些值，Linux内核都算好了躺在那呢</p>
+
+<h2 id="几个例子">几个例子</h2>
+
+<p>CPU过高是表象。除了系统确实负载已经到了极限，其他的，都是由其他原因引起的，比如I/O；比如设备。这些我们放在其他章节进行讨论。</p>
+
+<h3 id="gc引起的cpu过高">GC引起的CPU过高</h3>
+
+<p>接着我们最开始的例子来。通过查看jstack找到相应的16进制进程，结果发现是GC线程。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">&#34;VM Thread&#34; prio=10 tid=0x00007f06d8089000 nid=0x58c7 runnable 
+
+&#34;GC task thread#0 (ParallelGC)&#34; prio=10 tid=0x00007f06d801b800 nid=0x58d7 runnable</pre></div>
+<p>这种情况，一般都是JVM内存不够用了，疯狂GC，可能是socket/线程忘了关闭了，也可能是大对象没有回收。这种情况只能通过重启来解决了，记得重启之前，使用jmap dump一下堆栈哦。当然，你可能会得到jdk版本的问题。</p>
+
+<h3 id="st-占比过高">st%占比过高</h3>
+
+<p>st过高一般是物理CPU资源不足所致，也就是只发生在虚拟机上。
+如果你买的虚拟机st一直很高，那你的服务提供商可能在超卖，挤占你的资源。不信双11的时候看下你的虚拟机？</p>
+
+<h3 id="网卡导致单cpu过高">网卡导致单cpu过高</h3>
+
+<p>业务方几台kafka，cpu使用处于正常水平，才10%左右，但有一核cpu，负载特别的高，si奇高。
+mpstat -I SUM -P ALL 查看cpu使用情况，cpu0的中断确实比较多。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#bd93f9">20</span>:15:18  CPU    intr/s  
+<span style="color:#bd93f9">20</span>:15:23  all  <span style="color:#bd93f9">34234</span>.20  
+<span style="color:#bd93f9">20</span>:15:23    <span style="color:#bd93f9">0</span>   <span style="color:#bd93f9">9566</span>.20  
+<span style="color:#bd93f9">20</span>:15:23    <span style="color:#bd93f9">1</span>      <span style="color:#bd93f9">0</span>.00</code></pre></div>
+<p>网卡需要cpu服务时，都会抛出一个中断，中断告诉cpu发生了什么事情，cpu就要停止目前的工作来处理这个中断。其实，默认所有的中断处理都集中在cpu0 上，导致服务器负载过高。cpu0 成了瓶颈，而其他cpu却还闲着。
+➊ 解决方式1：使用CPU亲和性功能，kafka略过网卡所使用的CPU
+➋ 解决方式2: 更换网卡
+➌ 通常修改的方式还是有些复杂了，比如，修改
+/proc/irq/{seq}/smp_affinity
+我们可以直接安装irqbalance，然后执行就可以了。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell">yum install irqbalance -y 
+service irqbalance start</code></pre></div>
+<h3 id="cpu使用率低-但负载高">cpu使用率低，但负载高</h3>
+
+<p>cpu id%高，也就是空闲，比如90%。但 load average非常高，比如4核达到10。
+分析：load average高，说明其任务已经排队，许多任务正在等待。出现此种情况，可能存在大量不可中断的进程。
+使用top或者ps可以看到进程相应的状态。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4">ps aux</pre></div>
+<p><img src="https://mmbiz.qpic.cn/mmbiz_png/cvQbJDZsKLpmfeATqwL9yhuTAxL0LibVR5ZGYv3ZcexOMcqPmkEOCfFfD6GFwU0ibT2jNibc2nsSQxQ6XW5ElEOnQ/640?wx_fmt=png&amp;tp=webp&amp;wxfrom=5&amp;wx_lazy=1&amp;wx_co=1" alt="img" />
+一种情况就是有大量进程处于D的状态，也就是不可中断的睡眠状态，所以很可能是硬件问题。
+详见<a href="https://mp.weixin.qq.com/s?__biz=MzA4MTc4NTUxNQ==&amp;mid=2650518445&amp;idx=1&amp;sn=929d0fee4352336ea7aea96398ac3fc9&amp;token=202758616&amp;lang=zh_CN&amp;scene=21#wechat_redirect">《Linux进程状态(ps stat)之R、S、D、T、Z、X》</a></p>
+
+<h2 id="参考">参考</h2>
+
+<ul>
+<li><a href="https://mp.weixin.qq.com/s/rZFbIubcmsbLvBz2x-2BGg">小姐姐味道公众号</a></li>
+</ul>
+
+
+
+
+          
+
+ 
+          
+            <div class="entry-shang text-center">
+    <p>「真诚赞赏，手留余香」</p>
+    <button class="zs show-zs btn btn-bred">赞赏</button>
+</div>
+<div class="zs-modal-bg"></div>
+<div class="zs-modal-box">
+    <div class="zs-modal-head">
+        <button type="button" class="close">×</button>
+        <span class="author"><img src="https://www.k8sz.com/img/avatar.jpeg"/>ZB</span>
+        <p class="tip"><i></i><span>请我喝杯奶茶？</span></p>
+    </div>
+    <div class="zs-modal-body">
+
+        <div>
+           <img src="https://www.k8sz.com/img/zhuansuan.jpg" id="pay-image"/>
+        </div>
+
+    </div>
+    <div class="zs-modal-footer">
+        <span class="zs-wechat"><img src="https://www.k8sz.com/img/wechat-btn.png"/></span>
+    </div>
+</div>
+
+          
+
+          
+            <div class="social-share" data-initialized="true" style="margin-bottom: 20px;margin-top:20px;">
+    <center>
+    <font style="font-size:18px;color:darkcyan;">分享到：</font>
+    <a href="#" class="social-share-icon icon-weibo"></a>
+    <a href="#" class="social-share-icon icon-wechat"></a>
+
+    <a href="#" class="social-share-icon icon-linkedin"></a>
+
+
+    <a href="#" class="social-share-icon icon-qzone"></a>
+    </center>
+</div>
+ 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+          
+        </article>
+  
+        
+          
+
+<h3>相关文章</h3>
+<ul style="margin-bottom: 25px;">
+    
+    <li><a href="https://www.k8sz.com/post/linux-awk-command/">Linux之awk命令</a></li>
+    
+    <li><a href="https://www.k8sz.com/post/linux-git-command/">Linux之git常用命令</a></li>
+    
+</ul>
+
+        
+  
+        
+        <ul class="pager blog-pager">
+          
+            <li class="previous">
+              <a href="https://www.k8sz.com/post/linux-awk-command/" data-toggle="tooltip" data-placement="top" title="Linux之awk命令">&larr; 前一篇</a>
+            </li>
+          
+          
+        </ul>
+        
+
+      </div>
+    
+    
+  </div>
+</div>
+
+    <footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+        <p class="credits copyright text-muted">
+          
+
+          &nbsp;&bull;&nbsp;
+          2019
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/">ZB</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/sitemap.xml">网站地图</a>
+            &nbsp;&bull;&nbsp;
+            <a href="https://www.k8sz.com/page/archive/">文章归档</a>
+            &nbsp;&bull;&nbsp;
+          
+        </p>
+
+        
+        <p class="credits theme-by text-muted">
+
+          由 <a href="http://gohugo.io">Hugo v0.55.6</a> 强力驱动 &nbsp;&bull;&nbsp; 主题 <a href="https://www.k8sz.com/">ZB的博客</a> 移植自 <a href="https://github.com/rootsongjc/beautifulhugo">Beautiful Hugo</a>
+
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+
+<script src='https://www.k8sz.com/js/bundle.min.8242ab5c3c016acc49d8c7717b5c1a9f24511d0b9e5d1c0e44f2b907c76b5987.js' integrity='sha256-gkKrXDwBasxJ2Mdxe1wanyRRHQueXRwORPK5B8drWYc='></script>
+
+
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-146440849-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-146440849-1');
+</script>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+
+<script type="text/javascript">
+ 
+var a_idx = 0;
+jQuery(document).ready(function($) {
+    $("body").click(function(e) {
+        var a = new Array("Docker", "Kubernetes", "Prometheus", "Envoy", "Istio", "Service Mesh", "Cloud Native", "Golang", "DevOps");
+        var $i = $("<span />").text(a[a_idx]);
+        a_idx = (a_idx + 1) % a.length;
+        var x = e.pageX,
+        y = e.pageY;
+        function randomColor() {
+          var flakeColor = new Array("#FFDA65", "#00BFFF", "#BA55D3", "#FFA07A", "#87CEEB", "#FFB6C1");
+          var snowColor = flakeColor[Math.floor(flakeColor.length * Math.random())];
+          return snowColor;
+        }
+        $i.css({
+            "z-index": 999999999999999999999999999999999999999999999999999999999999999999999,
+            "top": y - 20,
+            "left": x,
+            "position": "absolute",
+            "font-weight": "bold",
+            "color": randomColor()
+        });
+        $("body").append($i);
+        $i.animate({
+            "top": y - 180,
+            "opacity": 0
+        },
+        1500,
+        function() {
+            $i.remove();
+        });
+    });
+});
+</script>
+
+
+<script type="text/javascript" src="https://www.k8sz.com/js/lightbox.js"></script>
+
+
+<script src="https://cdn.plyr.io/3.4.7/plyr.js"></script>
+<script>const player = new Plyr('#player');</script>
+
+
+  </body>
+</html>
+
