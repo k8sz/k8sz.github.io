@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>kubernetes</title>
+      <link>https://www.k8sz.com/tags/kubernetes/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>linux</title>
       <link>https://www.k8sz.com/tags/linux/</link>
       <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
@@ -30,20 +39,20 @@
     </item>
     
     <item>
+      <title>vim</title>
+      <link>https://www.k8sz.com/tags/vim/</link>
+      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/vim/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>helm</title>
       <link>https://www.k8sz.com/tags/helm/</link>
       <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/helm/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://www.k8sz.com/tags/kubernetes/</link>
-      <pubDate>Fri, 18 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
       <description></description>
     </item>
     

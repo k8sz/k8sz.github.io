@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://www.k8sz.com/post/linux-vim/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://www.k8sz.com/post/linux-command/</loc>
     <lastmod>2019-10-22T00:00:00+00:00</lastmod>
   </url>
@@ -32,7 +37,19 @@
   </url>
   
   <url>
+    <loc>https://www.k8sz.com/tags/kubernetes/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.k8sz.com/tags/linux/</loc>
+    <lastmod>2019-10-22T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://www.k8sz.com/tags/vim/</loc>
     <lastmod>2019-10-22T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -44,12 +61,6 @@
   
   <url>
     <loc>https://www.k8sz.com/tags/helm/</loc>
-    <lastmod>2019-10-18T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.k8sz.com/tags/kubernetes/</loc>
     <lastmod>2019-10-18T00:00:00+00:00</lastmod>
     <priority>0</priority>
   </url>
