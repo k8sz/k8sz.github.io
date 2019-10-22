@@ -6,34 +6,10 @@
     <description>Recent content on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 18 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Linux之CPU</title>
-      <link>https://www.k8sz.com/post/linux-cpu/</link>
-      <pubDate>Tue, 22 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/post/linux-cpu/</guid>
-      <description>&lt;p&gt;虽然CPU很小，但生产它的设备可不简单。如下图，就是一台重十几吨，占地上百平米，全世界都当宝贝的光刻机！&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Linux之awk命令</title>
-      <link>https://www.k8sz.com/post/linux-awk-command/</link>
-      <pubDate>Mon, 21 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/post/linux-awk-command/</guid>
-      <description>&lt;p&gt;awk是一个强大的文本分析工具，相对于grep的查找，sed的编辑，awk在其对数据分析并生成报告时，显得尤为强大。简单来说awk就是把文件逐行的读入，以空格为默认分隔符将每行切片，切开的部分再进行各种分析处理。&lt;/p&gt;
-
-&lt;p&gt;敢用自己的名字做软件名字的，都有非常强大的自信。比如，垠语言什么的。&lt;/p&gt;
-
-&lt;p&gt;awk的命名得自于它的三个创始人姓别的首字母，都是80来岁的老爷爷了。当然也有四个人的组合：流行的GoF设计模式。但对于我这游戏爱好者来说，想到的竟然是三位一体，果然是不争气啊。&lt;/p&gt;
-
-&lt;p&gt;它长的很像C，为什么这么有名，除了它强大的功能，我们姑且认为a这个字母比较靠前吧。awk比sed简单，它更像一门编程语言。&lt;/p&gt;</description>
-    </item>
     
     <item>
       <title>HelmV2迁移到V3版本</title>
