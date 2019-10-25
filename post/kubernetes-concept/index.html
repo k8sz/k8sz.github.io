@@ -382,13 +382,12 @@ Pod具有如下特征：</p>
 
 <p>Namespace（命名空间）是对一组资源和对象的抽象集合，比如可以用来将系统内部的对象划分为不同的项目组或者用户组。常见的pod、service、replicaSet和deployment等都是属于某一个namespace的(默认是default)，而node, persistentVolumes等则不属于任何namespace。
 常用namespace操作：</p>
-
-<ul>
-<li>kubectlgetnamespace, 查询所有namespace</li>
-<li>kubectl createnamespacens-name，创建namespace</li>
-<li>kubectldeletenamespacens-name, 删除namespace</li>
-</ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#6272a4"># 查询所有namespace</span>
+kubectlgetnamespace
+<span style="color:#6272a4"># 创建namespace</span>
+kubectl createnamespacens-name
+<span style="color:#6272a4"># 删除namespace</span>
+kubectldeletenamespacens-name</code></pre></div>
 <h3 id="删除命名空间时-需注意以下几点">删除命名空间时，需注意以下几点:</h3>
 
 <ul>
@@ -403,12 +402,12 @@ Pod具有如下特征：</p>
 <p>Node是Pod真正运行的主机，可以是物理机也可以是虚拟机。Node本质上不是Kubernetes来创建的， Kubernetes只是管理Node上的资源。为了管理Pod，每个Node节点上至少需要运行container runtime（Docker）、kubelet和kube-proxy服务。</p>
 
 <h3 id="常用node操作">常用node操作：</h3>
-
-<p>shell
-* kubectlgetnodes，查询所有node
-* kubectl cordon $nodename, 将node标志为不可调度
-* kubectl uncordon $nodename, 将node标志为可调度</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#6272a4"># 查询所有node</span>
+kubectl get nodes
+<span style="color:#6272a4"># 将node标志为不可调度</span>
+kubectl cordon <span style="color:#8be9fd;font-style:italic">$nodename</span>
+<span style="color:#6272a4"># 将node标志为可调度</span> 
+kubectl uncordon <span style="color:#8be9fd;font-style:italic">$nodename</span></code></pre></div>
 <h3 id="taint-污点">taint(污点)</h3>
 
 <p>使用kubectl taint命令可以给某个Node节点设置污点，Node被设置上污点之后就和Pod之间存在了一种相斥的关系，可以让Node拒绝Pod的调度执行，甚至将Node已经存在的Pod驱逐出去。每个污点的组成：key=value:effect，当前taint effect支持如下三个选项：</p>
@@ -624,11 +623,9 @@ kubectl rollout resume deploy nginx</code></pre></div>
 <li>支持三种metrics类型</li>
 </ul>
 
-<blockquote>
-<p>预定义metrics(比如Pod的CPU)以利用率的方式计算
-自定义的Pod metrics，以原始值(raw value)的方式计算
-自定义的object metrics</p>
-</blockquote>
+<p>** 预定义metrics(比如Pod的CPU)以利用率的方式计算
+** 自定义的Pod metrics，以原始值(raw value)的方式计算
+** 自定义的object metrics</p>
 
 <ul>
 <li>支持两种metrics查询方式:Heapster和自定义的REST API</li>
@@ -670,31 +667,25 @@ kubectl rollout resume deploy nginx</code></pre></div>
 <li>计算资源，包括cpu和memory</li>
 </ul>
 
-<blockquote>
-<p>cpu, limits.cpu, requests.cpu
-memory, limits.memory, requests.memory</p>
-</blockquote>
+<p>** cpu, limits.cpu, requests.cpu
+** memory, limits.memory, requests.memory</p>
 
 <ul>
 <li>存储资源，包括存储资源的总量以及指定storage class的总量</li>
 </ul>
 
-<blockquote>
-<p>requests.storage:存储资源总量，如500Gi
-persistentvolumeclaims:pvc的个数
-storageclass.storage.k8s.io/requests.storage
-storageclass.storage.k8s.io/persistentvolumeclaims</p>
-</blockquote>
+<p>** requests.storage:存储资源总量，如500Gi
+** persistentvolumeclaims:pvc的个数
+** storageclass.storage.k8s.io/requests.storage
+** storageclass.storage.k8s.io/persistentvolumeclaims</p>
 
 <ul>
 <li>对象数，即可创建的对象的个数</li>
 </ul>
 
-<blockquote>
-<p>pods, replicationcontrollers, configmaps, secrets
-resourcequotas, persistentvolumeclaims
-services, services.loadbalancers, services.nodeports</p>
-</blockquote>
+<p>** pods, replicationcontrollers, configmaps, secrets
+** resourcequotas, persistentvolumeclaims
+** services, services.loadbalancers, services.nodeports</p>
 
 <h2 id="参考">参考</h2>
 
