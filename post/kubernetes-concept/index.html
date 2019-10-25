@@ -420,14 +420,14 @@ Pod具有如下特征：</p>
 </ul>
 
 <h3 id="常用命令如下">常用命令如下：</h3>
-
-<ul>
-<li>kubectl taint node node0 key1=value1:NoShedule，为node0设置不可调度污点</li>
-<li>kubectl taint node node0 key-，将node0上key值为key1的污点移除</li>
-<li>kubectl taint node node1 node-role.kubernetes.io/master=:NoSchedule，为kube-master节点设置不可调度污点</li>
-<li>kubectl taint node node1 node-role.kubernetes.io/master=PreferNoSchedule，为kube-master节点设置尽量不可调度污点</li>
-</ul>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#282a36;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-shell" data-lang="shell"><span style="color:#6272a4"># 为node0设置不可调度污点</span>
+kubectl taint node node0 <span style="color:#8be9fd;font-style:italic">key1</span><span style="color:#ff79c6">=</span>value1:NoShedule
+<span style="color:#6272a4"># 将node0上key值为key1的污点移除</span>
+kubectl taint node node0 key-
+<span style="color:#6272a4"># 为kube-master节点设置不可调度污点</span>
+kubectl taint node node1 node-role.kubernetes.io/master<span style="color:#ff79c6">=</span>:NoSchedule
+<span style="color:#6272a4"># 为kube-master节点设置尽量不可调度污点</span> 
+kubectl taint node node1 node-role.kubernetes.io/master<span style="color:#ff79c6">=</span>PreferNoSchedule</code></pre></div>
 <h3 id="容忍-tolerations">容忍(Tolerations)</h3>
 
 <p>设置了污点的Node将根据taint的effect：NoSchedule、PreferNoSchedule、NoExecute和Pod之间产生互斥的关系，Pod将在一定程度上不会被调度到Node上。 但我们可以在Pod上设置容忍(Toleration)，意思是设置了容忍的Pod将可以容忍污点的存在，可以被调度到存在污点的Node上。</p>
@@ -621,10 +621,16 @@ kubectl rollout resume deploy nginx</code></pre></div>
 
 <ul>
 <li>控制管理器默认每隔30s查询metrics的资源使用情况(可以通过 &ndash;horizontal-pod-autoscaler-sync-period 修改)</li>
-<li>支持三种metrics类型
-&gt; 预定义metrics(比如Pod的CPU)以利用率的方式计算
-&gt; 自定义的Pod metrics，以原始值(raw value)的方式计算
-&gt; 自定义的object metrics</li>
+<li>支持三种metrics类型</li>
+</ul>
+
+<blockquote>
+<p>预定义metrics(比如Pod的CPU)以利用率的方式计算
+自定义的Pod metrics，以原始值(raw value)的方式计算
+自定义的object metrics</p>
+</blockquote>
+
+<ul>
 <li>支持两种metrics查询方式:Heapster和自定义的REST API</li>
 <li>支持多metrics</li>
 </ul>
@@ -661,19 +667,34 @@ kubectl rollout resume deploy nginx</code></pre></div>
 <h3 id="资源配额类型">资源配额类型</h3>
 
 <ul>
-<li>计算资源，包括cpu和memory
-&gt; cpu, limits.cpu, requests.cpu
-&gt; memory, limits.memory, requests.memory</li>
-<li>存储资源，包括存储资源的总量以及指定storage class的总量
-&gt; requests.storage:存储资源总量，如500Gi
-&gt; persistentvolumeclaims:pvc的个数
-&gt; storageclass.storage.k8s.io/requests.storage
-&gt; storageclass.storage.k8s.io/persistentvolumeclaims</li>
-<li>对象数，即可创建的对象的个数
-&gt; pods, replicationcontrollers, configmaps, secrets
-&gt; resourcequotas, persistentvolumeclaims
-&gt; services, services.loadbalancers, services.nodeports</li>
+<li>计算资源，包括cpu和memory</li>
 </ul>
+
+<blockquote>
+<p>cpu, limits.cpu, requests.cpu
+memory, limits.memory, requests.memory</p>
+</blockquote>
+
+<ul>
+<li>存储资源，包括存储资源的总量以及指定storage class的总量</li>
+</ul>
+
+<blockquote>
+<p>requests.storage:存储资源总量，如500Gi
+persistentvolumeclaims:pvc的个数
+storageclass.storage.k8s.io/requests.storage
+storageclass.storage.k8s.io/persistentvolumeclaims</p>
+</blockquote>
+
+<ul>
+<li>对象数，即可创建的对象的个数</li>
+</ul>
+
+<blockquote>
+<p>pods, replicationcontrollers, configmaps, secrets
+resourcequotas, persistentvolumeclaims
+services, services.loadbalancers, services.nodeports</p>
+</blockquote>
 
 <h2 id="参考">参考</h2>
 
