@@ -620,16 +620,18 @@ kubectl rollout resume deploy nginx</code></pre></div>
 
 <ul>
 <li>控制管理器默认每隔30s查询metrics的资源使用情况(可以通过 &ndash;horizontal-pod-autoscaler-sync-period 修改)</li>
-<li>支持三种metrics类型</li>
-</ul>
 
-<p>** 预定义metrics(比如Pod的CPU)以利用率的方式计算
-** 自定义的Pod metrics，以原始值(raw value)的方式计算
-** 自定义的object metrics</p>
+<li><p>支持三种metrics类型</p></li>
 
-<ul>
-<li>支持两种metrics查询方式:Heapster和自定义的REST API</li>
-<li>支持多metrics</li>
+<li><p>1.预定义metrics(比如Pod的CPU)以利用率的方式计算</p></li>
+
+<li><p>2.自定义的Pod metrics，以原始值(raw value)的方式计算</p></li>
+
+<li><p>3.自定义的object metrics</p></li>
+
+<li><p>支持两种metrics查询方式:Heapster和自定义的REST API</p></li>
+
+<li><p>支持多metrics</p></li>
 </ul>
 
 <p>可以通过如下命令创建HPA：kubectl autoscale deployment php-apache&ndash;cpu-percent=50&ndash;min=1&ndash;max=10</p>
@@ -664,28 +666,30 @@ kubectl rollout resume deploy nginx</code></pre></div>
 <h3 id="资源配额类型">资源配额类型</h3>
 
 <ul>
-<li>计算资源，包括cpu和memory</li>
+<li><p>计算资源，包括cpu和memory</p></li>
+
+<li><p>1.cpu, limits.cpu, requests.cpu</p></li>
+
+<li><p>2.memory, limits.memory, requests.memory</p></li>
+
+<li><p>存储资源，包括存储资源的总量以及指定storage class的总量</p></li>
+
+<li><p>1.requests.storage:存储资源总量，如500Gi</p></li>
+
+<li><p>2.persistentvolumeclaims:pvc的个数</p></li>
+
+<li><p>3.storageclass.storage.k8s.io/requests.storage</p></li>
+
+<li><p>4.storageclass.storage.k8s.io/persistentvolumeclaims</p></li>
+
+<li><p>对象数，即可创建的对象的个数</p></li>
+
+<li><p>1.pods, replicationcontrollers, configmaps, secrets</p></li>
+
+<li><p>2.resourcequotas, persistentvolumeclaims</p></li>
+
+<li><p>3.services, services.loadbalancers, services.nodeports</p></li>
 </ul>
-
-<p>** cpu, limits.cpu, requests.cpu
-** memory, limits.memory, requests.memory</p>
-
-<ul>
-<li>存储资源，包括存储资源的总量以及指定storage class的总量</li>
-</ul>
-
-<p>** requests.storage:存储资源总量，如500Gi
-** persistentvolumeclaims:pvc的个数
-** storageclass.storage.k8s.io/requests.storage
-** storageclass.storage.k8s.io/persistentvolumeclaims</p>
-
-<ul>
-<li>对象数，即可创建的对象的个数</li>
-</ul>
-
-<p>** pods, replicationcontrollers, configmaps, secrets
-** resourcequotas, persistentvolumeclaims
-** services, services.loadbalancers, services.nodeports</p>
 
 <h2 id="参考">参考</h2>
 
