@@ -6,10 +6,40 @@
     <description>Recent content in kubernetes on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 22 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/tags/kubernetes/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Kubernetes之16个入门概念</title>
+      <link>https://www.k8sz.com/post/kubernetes-concept/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/kubernetes-concept/</guid>
+      <description>&lt;p&gt;Kubernetes是Google开源的容器集群管理系统，是Google多年⼤规模容器管理技术Borg的开源版本，主要功能包括:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;基于容器的应用部署、维护和滚动升级&lt;/li&gt;
+&lt;li&gt;负载均衡和服务发现&lt;/li&gt;
+&lt;li&gt;跨机器和跨地区的集群调度&lt;/li&gt;
+&lt;li&gt;自动伸缩&lt;/li&gt;
+&lt;li&gt;无状态服务和有状态服务&lt;/li&gt;
+&lt;li&gt;广泛的Volume支持&lt;/li&gt;
+&lt;li&gt;插件机制保证扩展性&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Kubernetes发展非常迅速，已经成为容器编排领域的领导者，接下来我们将讲解Kubernetes中涉及到的一些主要概念。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Kubernetes之使用Kustomize配置应用</title>
+      <link>https://www.k8sz.com/post/kubernetes-kustomize/</link>
+      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/post/kubernetes-kustomize/</guid>
+      <description>&lt;p&gt;如果你经常使用 Kubernetes，那么你肯定就有定制资源清单文件的需求，但是貌似现在大家都比较喜欢使用 Helm，Helm 很好用，但也有很多缺点，比如需要一个 tiller 服务端，需要超高的权限，最重要的是如果你要想自己做一个 Helm Chart 包的话，则不是那么容易的，需要你了解一些 go template 的相关知识，它抛弃了我们在 Docker 和 Kubernetes 上面学到的一些逻辑，今天我们将为大家介绍另外一种名为&lt;code&gt;Kustomize&lt;/code&gt;的替代工具。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>Linux之vim技巧</title>
