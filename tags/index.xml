@@ -6,7 +6,7 @@
     <description>Recent content in Tags on ZB</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 25 Oct 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 26 Oct 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://www.k8sz.com/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>ConfigMap</title>
       <link>https://www.k8sz.com/tags/configmap/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/configmap/</guid>
       <description></description>
@@ -23,7 +23,7 @@
     <item>
       <title>CronJob</title>
       <link>https://www.k8sz.com/tags/cronjob/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/cronjob/</guid>
       <description></description>
@@ -32,7 +32,7 @@
     <item>
       <title>HPA</title>
       <link>https://www.k8sz.com/tags/hpa/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/hpa/</guid>
       <description></description>
@@ -41,7 +41,7 @@
     <item>
       <title>Job</title>
       <link>https://www.k8sz.com/tags/job/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/job/</guid>
       <description></description>
@@ -50,7 +50,7 @@
     <item>
       <title>Resource Quotas</title>
       <link>https://www.k8sz.com/tags/resource-quotas/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/resource-quotas/</guid>
       <description></description>
@@ -59,7 +59,7 @@
     <item>
       <title>Secret</title>
       <link>https://www.k8sz.com/tags/secret/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/secret/</guid>
       <description></description>
@@ -68,7 +68,7 @@
     <item>
       <title>Service Account</title>
       <link>https://www.k8sz.com/tags/service-account/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/service-account/</guid>
       <description></description>
@@ -77,16 +77,25 @@
     <item>
       <title>StatefulSet</title>
       <link>https://www.k8sz.com/tags/statefulset/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/statefulset/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>StorageClass</title>
+      <link>https://www.k8sz.com/tags/storageclass/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/storageclass/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>concept</title>
       <link>https://www.k8sz.com/tags/concept/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/concept/</guid>
       <description></description>
@@ -95,9 +104,90 @@
     <item>
       <title>deployment</title>
       <link>https://www.k8sz.com/tags/deployment/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/deployment/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ingress</title>
+      <link>https://www.k8sz.com/tags/ingress/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/ingress/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>kubernetes</title>
+      <link>https://www.k8sz.com/tags/kubernetes/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>namespace</title>
+      <link>https://www.k8sz.com/tags/namespace/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/namespace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nas</title>
+      <link>https://www.k8sz.com/tags/nas/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/nas/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pod</title>
+      <link>https://www.k8sz.com/tags/pod/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/pod/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pv</title>
+      <link>https://www.k8sz.com/tags/pv/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/pv/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pvc</title>
+      <link>https://www.k8sz.com/tags/pvc/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/pvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>service</title>
+      <link>https://www.k8sz.com/tags/service/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/service/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>volume</title>
+      <link>https://www.k8sz.com/tags/volume/</link>
+      <pubDate>Sat, 26 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://www.k8sz.com/tags/volume/</guid>
       <description></description>
     </item>
     
@@ -111,83 +201,11 @@
     </item>
     
     <item>
-      <title>ingress</title>
-      <link>https://www.k8sz.com/tags/ingress/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/ingress/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>kubernetes</title>
-      <link>https://www.k8sz.com/tags/kubernetes/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/kubernetes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>kustomize</title>
       <link>https://www.k8sz.com/tags/kustomize/</link>
       <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
       
       <guid>https://www.k8sz.com/tags/kustomize/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>namespace</title>
-      <link>https://www.k8sz.com/tags/namespace/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/namespace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pod</title>
-      <link>https://www.k8sz.com/tags/pod/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/pod/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pv</title>
-      <link>https://www.k8sz.com/tags/pv/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/pv/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>pvc</title>
-      <link>https://www.k8sz.com/tags/pvc/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/pvc/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>service</title>
-      <link>https://www.k8sz.com/tags/service/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/service/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>volume</title>
-      <link>https://www.k8sz.com/tags/volume/</link>
-      <pubDate>Fri, 25 Oct 2019 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/tags/volume/</guid>
       <description></description>
     </item>
     
