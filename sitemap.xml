@@ -461,6 +461,11 @@
   </url>
   
   <url>
+    <loc>https://www.k8sz.com/book/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://www.k8sz.com/page/about/</loc>
   </url>
   
