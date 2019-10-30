@@ -284,15 +284,6 @@ kubeadm 通过执行必要的操作来启动和运行一个最小可用的集群
     </item>
     
     <item>
-      <title></title>
-      <link>https://www.k8sz.com/book/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://www.k8sz.com/book/</guid>
-      <description>Introduction · Kubernetes  @media only screen and (max-width: 640px) { .book-header .hidden-mobile { display: none; } }   window[&#34;gitbook-plugin-github-buttons&#34;] = {&#34;repo&#34;:&#34;rootsongjc/kubernetes-handbook&#34;,&#34;types&#34;:[&#34;star&#34;],&#34;size&#34;:&#34;small&#34;};     前言 1.1. Introduction   概念与原理 2.1. Kubernetes架构  2.1.1. 设计理念   2.1.2. Etcd解析   2.1.3. 开放接口  2.1.3.1. CRI - Container Runtime Interface（容器运行时接口）   2.1.3.2. CNI - Container Network Interface（容器网络接口）   2.1.3.3. CSI - Container Storage Interface（容器存储接口）       2.</description>
-    </item>
-    
-    <item>
       <title>About me</title>
       <link>https://www.k8sz.com/page/about/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
